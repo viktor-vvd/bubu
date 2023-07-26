@@ -1,0 +1,164 @@
+.auth {
+    height: 100vh;
+    align-items: start;
+    overflow-x: hidden;
+}
+
+.auth_Waves {
+    display: block;
+    height: 12.5rem;
+    flex-shrink: 0;
+}
+
+.auth_Container {
+    gap: 2.5rem;
+}
+
+.auth_Logo {
+    max-width: 11.875rem;
+    width: 100%;
+    height: 2.74725rem;
+    flex-shrink: 0;
+}
+
+.auth_SignInRegisterContainer {
+    display: flex;
+    max-width: 20.5rem;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.875rem;
+}
+
+.auth_SignInRegisterContainer h1 {
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.auth_SignInRegisterContainer form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+    align-self: stretch;
+    font-style: normal;
+    line-height: normal;
+}
+
+.auth_SignInRegisterContainer form input {
+    color: #000;
+    font-family: Comfortaa;
+    font-size: 0.9375rem;
+    font-weight: 300;
+    text-overflow: ellipsis;
+    padding: 1.25rem;
+    align-self: stretch;
+    border-radius: 0.3125rem;
+    border: 1px solid #C7C7C7;
+}
+
+.auth_SignInRegisterContainer form input:placeholder-shown {
+    color: #585858;
+    font-size: 0.9375rem;
+}
+
+.auth_SignInRegisterContainer form a {
+    color: #D03664;
+    font-size: 0.9375rem;
+    font-weight: 700;
+    text-decoration-line: underline;
+    transition: all 0.25s ease-in-out;
+}
+
+.auth_SignInRegisterContainer form a:hover {
+    color: #AA2B51;
+}
+
+.auth_Button {
+    display: flex;
+    padding: 1.25rem 1.875rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    align-self: stretch;
+    border-radius: 0.625rem;
+    font-family: Comfortaa;
+    font-size: 0.9375rem;
+    font-weight: 700;
+    transition: all 0.25s ease-in-out;
+    border: 1px solid #D03664;
+}
+
+.auth_Button:hover {
+    cursor: pointer;
+}
+
+.auth_SubmitButton {
+    background: #D03664;
+    color: #FFF;
+}
+
+.auth_SubmitButton:hover {
+    border: 1px solid #AA2B51;
+    background: #AA2B51;
+}
+
+.auth_RegisterButton {
+    background-color: transparent;
+    color: #D03664;
+}
+
+.auth_RegisterButton:hover {
+    background: #FFEAF1;
+}
+
+.auth_Divider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+    align-self: stretch;
+}
+
+.auth_Divider hr {
+    border: 0.0625rem solid #C7C7C7;
+    width: 100%;
+}
+
+.auth_Divider span {
+    color: #585858;
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.auth_OtherSignUp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.9375rem;
+}
+
+.auth_OtherSignUp span {
+    color: #000;
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.auth_OtherSignUp div {
+    display: flex;
+    align-items: center;
+    gap: 1.875rem;
+}
+
+.auth_OtherSignUp div img {
+    width: 2.5rem;
+    height: 2.5rem;
+    cursor: pointer;
+}
