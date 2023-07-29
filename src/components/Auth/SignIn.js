@@ -7,10 +7,10 @@ const SignIn = ({ setisRegistered }) => {
         <input name="login" type="text" placeholder="Телефон або e-mail" />
         <input name="password" type="password" placeholder="Пароль" />
         <a href="#">Забули пароль?</a>
-        <button type="submit" className="auth_SubmitButton auth_Button" title="Увійти в акаунт">
+        <button type="submit" className="button button-submit" title="Увійти в акаунт">
           Увійти
         </button>
-        <button type="button" className="auth_RegisterButton auth_Button" title="Зареєструватись"  onClick={()=>setisRegistered(false)}>
+        <button type="button" className="button button-register" title="Зареєструватись"  onClick={()=>setisRegistered(false)}>
           У мене немає акаунта
         </button>
       </form>

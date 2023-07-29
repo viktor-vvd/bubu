@@ -3,11 +3,26 @@
     src: local('Comfortaa'), url(../assets/fonts/Comfortaa/static/Comfortaa-Light.ttf) format('truetype');
 }
 
-.container {
-    width: 100%;
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container-vertical {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     font-family: Comfortaa;
+}
+
+.container-horisontal{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Comfortaa;
+}
+
+.content-container{
+    padding-top: 9.4375rem;
 }

@@ -1,0 +1,26 @@
+.container-horisontal .search-bar{
+    width: 100%;
+}
+
+.search-bar input {
+    background-image: url('/src/assets/images/search.png');
+    background-position: right 0.9375rem bottom 50%;
+    background-repeat: no-repeat;
+    background-size: 0.9375rem;
+    text-overflow: ellipsis;
+    padding: 1.25rem;
+    padding-right: 2.3775rem;
+    width: 100%;
+    color: #FFF;
+    font-family: Comfortaa;
+    font-size: 0.9375rem;
+    font-weight: 300;
+    border-radius: 0.625rem;
+    border: 1px solid #FFF;
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.search-bar input::placeholder {
+    color: #FFF;
+    font-size: 0.9375rem;
+}
