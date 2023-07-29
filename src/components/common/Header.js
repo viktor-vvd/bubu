@@ -21,12 +21,12 @@ const Header = () => {
               <a href="#">
                 <img className="logo" src={bubuLogoWhite} alt="bubu Logo" />
               </a>
-              <div className="container-horisontal inner-container">
+              <nav className="container-horisontal inner-container">
                 <a href="#">Про нас</a>
                 <a href="#">Контакти</a>
                 <a href="#">Доставка і оплата</a>
                 <a href="#">Повернення і обмін</a>
-              </div>
+              </nav>
             </div>
             <div className="container-horisontal">
               <span className="phone">(063) 128-46-09</span>

@@ -15,7 +15,7 @@ import "../../styles/Catalogue.css";
 const Catalogue = () => {
   const [isCatalogueExpanded, setisCatalogueExpanded] = useState(true);
   return (
-    <div className="catalogue-container">
+    <nav className="catalogue-container">
       <ul
         className={"catalogue-list" + (isCatalogueExpanded ? " expanded" : "")}
       >
@@ -74,7 +74,7 @@ const Catalogue = () => {
           </>
         )}
       </ul>
-    </div>
+    </nav>
   );
 };
 
