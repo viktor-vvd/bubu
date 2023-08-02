@@ -6,11 +6,10 @@
     flex-direction: column;
     align-items: center;
     position: fixed;
+    z-index: 10;
 }
 
 .header .container-vertical:first-child {
-    max-width: 80.62rem;
-    width: 100%;
     gap: 1.25rem;
     padding-top: 1.25rem;
 }
@@ -110,6 +109,11 @@
 
 .container-horisontal .lists-container {
     gap: 0.44rem;
+    cursor: pointer;
+}
+
+.lists-container{
+    text-decoration: none;
 }
 
 .lists-container img {
@@ -120,6 +124,7 @@
     color: #FFF4F8;
     font-size: 0.9375rem;
     font-weight: 700;
+    text-decoration: none;
 }
 
 .lists-container .cart-counter {

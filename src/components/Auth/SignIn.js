@@ -1,4 +1,6 @@
 import React from "react";
+import ButtonDefault from "../common/ButtonDefault";
+import ButtonWhite from "../common/ButtonWhite";
 const SignIn = ({ setisRegistered }) => {
   return (
     <>
@@ -7,12 +9,8 @@ const SignIn = ({ setisRegistered }) => {
         <input name="login" type="text" placeholder="Телефон або e-mail" />
         <input name="password" type="password" placeholder="Пароль" />
         <a href="#">Забули пароль?</a>
-        <button type="submit" className="button button-submit" title="Увійти в акаунт">
-          Увійти
-        </button>
-        <button type="button" className="button button-register" title="Зареєструватись"  onClick={()=>setisRegistered(false)}>
-          У мене немає акаунта
-        </button>
+        <ButtonDefault btntype="submit" btntitle="Увійти в акаунт" value="Увійти"/>
+        <ButtonWhite btntype="button" onclick={()=>setisRegistered(false)} btntitle="Зареєструватись" value="У мене немає акаунта"/>
       </form>
     </>
   );

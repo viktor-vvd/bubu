@@ -1,0 +1,13 @@
+.popular-brands-slider-container .slider-arrows{
+    display:none;
+}
+
+@media (max-width: 1000px) {
+    .popular-brands-slider-container .slider-arrows{
+        display:flex;
+    }
+}
+
+.popular-brand img{
+    cursor: pointer;
+}

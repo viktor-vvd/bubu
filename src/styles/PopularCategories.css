@@ -1,0 +1,110 @@
+    .popular-categories-container {
+        width: 100%;
+        display: grid;
+        gap: 1.88rem;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "carriage room bed puzzles"
+            "carriage pot bed bath"
+    }
+
+    @media (max-width: 1000px) {
+        .popular-categories-container {
+            width: 100%;
+            display: grid;
+            gap: 1.88rem;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas:
+                "carriage room"
+                "carriage pot"
+                "puzzles bed"
+                "bath bed"
+        }
+    }
+
+    @media (max-width: 480px) {
+        .popular-categories-container {
+            width: 100%;
+            display: grid;
+            gap: 1.88rem;
+            grid-template-columns: 1fr;
+            grid-template-areas:
+                "carriage"
+                "room"
+                "pot"
+                "puzzles"
+                "bath"
+                "bed"
+        }
+
+        .category-wrapper {
+            height: 11.25rem;
+            display: flex;
+            align-items: start;
+            justify-content: end;
+            flex: 1 0 0;
+            border-radius: 1.25rem;
+            align-self: stretch;
+            position: relative;
+            overflow: hidden;
+        }
+        .category-wrapper img {
+            width: 11rem;
+            cursor: pointer;
+        }
+    }
+
+    .category-wrapper {
+        display: flex;
+        align-items: start;
+        justify-content: end;
+        flex: 1 0 0;
+        border-radius: 1.25rem;
+        align-self: stretch;
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+    }
+
+
+    .category-wrapper span {
+        padding: 0.625rem;
+        color: #FFF;
+        font-size: 0.9375rem;
+        font-weight: 400;
+        border-radius: 0.625rem;
+        background: rgba(0, 0, 0, 0.15);
+        position: absolute;
+        bottom: 1.87rem;
+        left: 1.87rem;
+    }
+
+    .category-wrapper:nth-child(1) {
+        grid-area: carriage;
+        background: linear-gradient(225deg, #6AD245 0%, #58BE34 100%);
+    }
+
+    .category-wrapper:nth-child(2) {
+        grid-area: room;
+        background: #F99C11;
+    }
+
+    .category-wrapper:nth-child(3) {
+        grid-area: pot;
+        background: linear-gradient(225deg, #2DEAE4 0%, #27D8D2 100%);
+    }
+
+    .category-wrapper:nth-child(4) {
+        grid-area: bed;
+        background: linear-gradient(225deg, #4F8AE2 0%, #3A73C9 100%);
+    }
+
+    .category-wrapper:nth-child(5) {
+        grid-area: puzzles;
+        background: linear-gradient(223deg, #D84545 0%, #CC3C3C 100%);
+    }
+
+    .category-wrapper:nth-child(6) {
+        grid-area: bath;
+        background: linear-gradient(225deg, #A24FE2 0%, #8E3AD0 100%);
+    }

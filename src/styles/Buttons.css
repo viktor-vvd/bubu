@@ -1,0 +1,30 @@
+.button {
+    display: flex;
+    padding: 1.25rem 1.875rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    border-radius: 0.625rem;
+    font-family: Comfortaa;
+    font-size: 0.9375rem;
+    font-weight: 700;
+    transition: all 0.25s ease-in-out;
+    border: 1px solid #D03664;
+    background: #D03664;
+    color: #FFF;
+}
+
+.button:hover {
+    cursor: pointer;
+    border: 1px solid #AA2B51;
+    background: #AA2B51;
+}
+
+.button-white {
+    background-color: transparent;
+    color: #D03664;
+}
+
+.button-white:hover {
+    background: #FFEAF1;
+}

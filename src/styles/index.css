@@ -6,6 +6,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .container-vertical {
@@ -24,5 +25,13 @@
 }
 
 .content-container{
-    padding-top: 9.4375rem;
+    padding-top: 9.7rem;
+    width: 100%;
+    z-index: 1;
+}
+
+.section-container{
+    max-width: 84.385rem;
+    width: 100%;
+    padding: 0 1.88rem;
 }

@@ -1,0 +1,198 @@
+.footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.footer .promo-subscription-container {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../assets/images/FooterWaves2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.promo-subscription-container .promo-subscription-wrapper {
+    align-items: center;
+    justify-content: start;
+    gap: 6.88rem;
+}
+
+.promo-subscription {
+    gap: 1.88rem;
+    max-width: 45.5rem;
+    width: 100%;
+}
+
+.promo-subscription h2 {
+    color: #FFF;
+    flex-shrink: 0;
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.promo-subscription-form {
+    gap: 0.94rem;
+    max-width: 22.7rem;
+    width: 100%;
+}
+
+.promo-subscription-form input {
+    max-width: 18.35rem;
+    width: 100%;
+    text-overflow: ellipsis;
+    padding: 0.94rem;
+    padding-right: 2.3775rem;
+    color: #FFF;
+    font-family: Comfortaa;
+    font-size: 0.9375rem;
+    font-weight: 300;
+    border-radius: 0.625rem;
+    border: 1px solid #FFF;
+    background-color: rgba(255, 255, 255, 0.15);
+    flex-shrink: 0;
+}
+
+.promo-subscription-form input::placeholder {
+    color: #FFF;
+    font-size: 0.9375rem;
+    font-weight: 400;
+}
+
+.promo-subscription-form button {
+    border: none;
+    cursor: pointer;
+    appearance: none;
+    background-color: inherit;
+    width: 3rem;
+    height: 3rem;
+    flex-shrink: 0;
+}
+
+.promo-subscription-form button img {
+    width: 3rem;
+    height: 3rem;
+}
+
+.promo-subscription-wrapper .footer-image {
+    width: 21.5625rem;
+}
+
+.footer-container {
+    width: 100%;
+    background: #D03664;
+    padding-top: 3.75rem;
+    padding-bottom: 3.88rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-container .section-container {
+    gap: 2.5rem;
+    align-items: start;
+}
+
+.footer-container .section-container .footer-middle-container {
+    gap: 8.69rem;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.footer-container .contacts-wrapper {
+    width: 18.75rem;
+    padding: 1.875rem;
+    align-items: flex-start;
+    gap: 0.9375rem;
+    border-radius: 1.25rem;
+    background: #AA2B51;
+}
+
+.footer-container .contacts-wrapper h3 {
+    color: #FFF;
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.footer-container .contacts-wrapper .email {
+    text-decoration: underline;
+}
+
+.footer-container .contacts-wrapper span {
+    color: #FFF;
+    font-size: 0.9375rem;
+    font-weight: 300;
+}
+
+.socials-container {
+    display: flex;
+    gap: 0.94rem;
+}
+
+.socials-logo {
+    height: 1.25rem;
+}
+
+.footer-container .info-wrapper {
+    align-items: flex-start;
+    gap: 1.25rem;
+}
+
+.footer-container .info-wrapper div {
+    display: flex;
+    gap: 3.13rem;
+}
+
+.footer-container .info-wrapper h3 {
+    color: #FFF;
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.footer-container .info-wrapper .info-container {
+    align-items: flex-start;
+    gap: 0.9375rem;
+    list-style-type: none;
+}
+
+.footer-container .info-wrapper .info-container a {
+    color: #FFF;
+    font-size: 0.9375rem;
+    font-weight: 300;
+    text-decoration: none;
+
+}
+
+@media (min-width: 360px) {
+    .footer-container .info-wrapper .info-container a {
+        white-space: nowrap;
+    }
+}
+
+.footer-container .info-wrapper .info-container a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom-container {
+    gap: 0.62rem;
+    align-items: flex-start;
+}
+
+.footer-bottom-container span {
+    color: #F3A8BF;
+    font-size: 0.875rem;
+    font-weight: 300;
+}
+
+.footer-bottom-container .container-horisontal {
+    gap: 0.62rem;
+}
