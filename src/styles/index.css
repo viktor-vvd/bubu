@@ -24,6 +24,10 @@
     font-family: Comfortaa;
 }
 
+.main-container{
+    width: 100%;
+}
+
 .content-container{
     padding-top: 9.7rem;
     width: 100%;

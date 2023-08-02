@@ -1,19 +1,31 @@
 import "./App.css";
 import "./styles/index.css";
+import AppRouter from "./AppRouter";
 import Auth from "./components/Auth/Auth";
 import Header from "./components/common/Header";
 import Home from "./components/Home/Home";
 import Footer from "./components/common/Footer";
+import { useLocation } from "react-router-dom";
 
 function App() {
+  let location = useLocation();
+  function AuthPageCheck() {
+    const location = useLocation();
+    return !location.pathname.includes("auth");
+  }
+  console.log(location);
   return (
     <div className="App">
-      {/* <Auth/> */}
-      <Header/>
-      <main className="container-vertical content-container">
-        <Home/>
+      {AuthPageCheck() && <Header />}
+      <main
+        className={
+          "container-vertical main-container" +
+          (AuthPageCheck() ? " content-container" : "")
+        }
+      >
+        <AppRouter />
       </main>
-      <Footer/>
+      {AuthPageCheck() && <Footer />}
     </div>
   );
 }

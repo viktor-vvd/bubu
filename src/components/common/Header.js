@@ -48,8 +48,8 @@ const Header = () => {
               </a>
             </div>
             <div className="container-horisontal profile">
-              <img src={profile} alt="facebook" />
-              <a href="#">Вхід</a>
+              <img src={profile} alt="profile" />
+              <a href="/auth">Вхід</a>
             </div>
           </div>
         </div>
