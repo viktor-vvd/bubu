@@ -8,12 +8,10 @@ import Footer from "./components/common/Footer";
 import { useLocation } from "react-router-dom";
 
 function App() {
-  let location = useLocation();
   function AuthPageCheck() {
     const location = useLocation();
     return !location.pathname.includes("auth");
   }
-  console.log(location);
   return (
     <div className="App">
       {AuthPageCheck() && <Header />}

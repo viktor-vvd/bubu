@@ -11,9 +11,14 @@ import toy from "../../assets/images/toy.png";
 import clothes from "../../assets/images/clothes.png";
 import newIcon from "../../assets/images/new.png";
 import "../../styles/Catalogue.css";
+import { useLocation } from "react-router-dom";
 
 const Catalogue = () => {
-  const [isCatalogueExpanded, setisCatalogueExpanded] = useState(true);
+  function HomePageCheck() {
+    const location = useLocation();
+    return location.pathname==="/home";
+  }
+  const [isCatalogueExpanded, setisCatalogueExpanded] = useState(HomePageCheck());
   return (
     <nav className="catalogue-container">
       <ul
