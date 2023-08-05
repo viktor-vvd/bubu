@@ -10,12 +10,12 @@ import arrowRight from "../../assets/images/arrowRight.png";
 const Home = () => {
   const [isInfoFolded, setisInfoFolded] = useState(true);
   return (
-    <div className="container-vertical home-container section-container">
-      <div className="container-horisontal home-section-container">
-        <div className="catalogue-placeholder"></div>
+    <main className="container-vertical home-container page-container">
+      <section className="container-horisontal home-section-container">
+        <aside className="catalogue-placeholder"></aside>
         <SaleSlider />
-      </div>
-      <div className="container-vertical home-section-container">
+      </section>
+      <section className="container-vertical home-section-container">
         <div className="container-horisontal home-section-title-container">
           <div className="container-horisontal home-section-title">
             <h2>Акція!</h2>
@@ -26,8 +26,8 @@ const Home = () => {
           </div>
         </div>
         <ProductsSlider productsList={productsList} />
-      </div>
-      <div className="container-vertical home-section-container">
+      </section>
+      <section className="container-vertical home-section-container">
         <div className="container-horisontal home-section-title-container">
           <div className="container-horisontal home-section-title">
             <h2>Популярні Категорії</h2>
@@ -35,8 +35,8 @@ const Home = () => {
           </div>
         </div>
         <PopularCategories />
-      </div>
-      <div className="container-vertical home-section-container">
+      </section>
+      <section className="container-vertical home-section-container">
         <div className="container-horisontal home-section-title-container">
           <div className="container-horisontal home-section-title">
             <h2>Популярні Бренди</h2>
@@ -46,8 +46,8 @@ const Home = () => {
           </div>
         </div>
         <PopularBrands />
-      </div>
-      <div className="container-vertical home-section-container home-short-info-container">
+      </section>
+      <section className="container-vertical home-section-container home-short-info-container">
         <div className="container-vertical home-short-info-section">
           <p className={isInfoFolded ? "folded" : ""}>
             Інтернет-магазин дитячих товарів Бу-Бу - зона комфорту малюків і їх
@@ -76,16 +76,16 @@ const Home = () => {
             Докладніше
           </span>
         </div>
-      </div>
-      <div className="container-vertical home-section-container">
+      </section>
+      <section className="container-vertical home-section-container">
         <div className="container-horisontal home-section-title-container">
           <div className="container-horisontal home-section-title">
             <h2>Ви переглядали</h2>
           </div>
         </div>
         <ProductsSlider productsList={productsList} />
-      </div>
-    </div>
+      </section>
+    </main>
   );
 };
 

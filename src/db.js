@@ -131,4 +131,4 @@ const brandsList = [
   },
 ];
 
-export { productsList };
+export { productsList, brandsList };

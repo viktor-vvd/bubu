@@ -50,7 +50,6 @@
     width: 100%;
     text-overflow: ellipsis;
     padding: 0.94rem;
-    padding-right: 2.3775rem;
     color: #FFF;
     font-family: Comfortaa;
     font-size: 0.9375rem;
@@ -95,12 +94,12 @@
     justify-content: center;
 }
 
-.footer-container .section-container {
+.footer-container .page-container {
     gap: 2.5rem;
     align-items: start;
 }
 
-.footer-container .section-container .footer-middle-container {
+.footer-container .page-container .footer-middle-container {
     gap: 8.69rem;
     flex-wrap: wrap;
     justify-content: flex-start;

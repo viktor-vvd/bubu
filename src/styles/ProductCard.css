@@ -93,6 +93,7 @@
 
 .card-container:hover {
     overflow: visible;
+    z-index: 2;
 }
 
 .card-container:hover .card-absolute-container {

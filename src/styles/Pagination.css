@@ -1,0 +1,50 @@
+.pagination {
+    gap: 1.25rem;
+    list-style-type: none;
+}
+
+.pagination__item {
+    justify-content: center;
+    width: 2.5625rem;
+    height: 2.5625rem;
+    flex-shrink: 0;
+    border-radius: 50%;
+    border: 1px solid #E1E1E1;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.pagination__item:hover{
+    border: 1px solid #AA2B51;
+}
+
+.pagination__item_active{    
+    border: 1px solid #D03664;
+}
+
+.pagination__item__link {
+    font-size: 1.0625rem;
+    font-weight: 500;
+}
+
+.pagination__button{
+    display: block;
+    cursor: pointer;
+}
+
+.pagination__button__link{
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    background: url("../assets/images/arrowRight.png");
+    background-size: 100%;
+    cursor: pointer;
+}
+
+.pagination__button__link_previous{
+    rotate: 180deg;
+}
+
+.pagination__button_disabled{
+    display: none;
+}

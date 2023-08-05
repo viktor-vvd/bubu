@@ -6,11 +6,12 @@ const ButtonWhite = ({
   btntitle = null,
   onclick = null,
   btntype = null,
+  className=null
 }) => {
   return (
     <button
       type={btntype}
-      className="button button-white"
+      className={className?("button button-white "+className):("button")}
       title={btntitle}
       onClick={onclick}
     >

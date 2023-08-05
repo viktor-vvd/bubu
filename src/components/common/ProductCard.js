@@ -3,10 +3,12 @@ import "../../styles/ProductCard.css";
 import ButtonDefault from "./ButtonDefault";
 import favoriteDefault from "../../assets/images/favoriteDefault.png";
 import comparisonDefault from "../../assets/images/сomparisonDefault.png";
+import { useNavigate } from "react-router-dom";
 
 const ProductCard = ({ item }) => {
+  const navigate = useNavigate();
   return (
-    <div className="card-container">
+    <div className="card-container" onClick={() => navigate("/product", { state: { item: item } })}>
       <div className="container-vertical card-absolute-container">
         <div className="container-vertical card-image-container">
           <img src={item.product_image} alt="Product" />

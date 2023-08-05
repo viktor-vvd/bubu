@@ -15,14 +15,14 @@ function App() {
   return (
     <div className="App">
       {AuthPageCheck() && <Header />}
-      <main
+      <div
         className={
           "container-vertical main-container" +
           (AuthPageCheck() ? " content-container" : "")
         }
       >
         <AppRouter />
-      </main>
+      </div>
       {AuthPageCheck() && <Footer />}
     </div>
   );

@@ -1,12 +1,13 @@
 @font-face {
     font-family: 'Comfortaa';
-    src: local('Comfortaa'), url(../assets/fonts/Comfortaa/static/Comfortaa-Light.ttf) format('truetype');
+    src: local('Comfortaa'), url(../assets/fonts/Comfortaa/Comfortaa-VariableFont_wght.ttf) format('truetype');
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Comfortaa;
 }
 
 .container-vertical {
@@ -17,25 +18,52 @@
     font-family: Comfortaa;
 }
 
-.container-horisontal{
+.container-horisontal {
     display: flex;
     align-items: center;
     justify-content: space-between;
     font-family: Comfortaa;
 }
 
-.main-container{
+.main-container {
     width: 100%;
 }
 
-.content-container{
+.content-container {
     padding-top: 9.7rem;
     width: 100%;
     z-index: 1;
 }
 
-.section-container{
+.page-container {
     max-width: 84.385rem;
     width: 100%;
     padding: 0 1.88rem;
+}
+
+.breadcrumbs {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    list-style-type: none;
+}
+
+.breadcrumbs__item {
+    color: var(--accent, #D03664);
+    font-family: Comfortaa;
+    font-size: 0.9375rem;
+    font-weight: 300;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+.breadcrumbs__item:hover {
+    text-decoration: underline;
+}
+
+.breadcrumbs__divider {
+    color: var(--accent, #D03664);
+    font-family: Comfortaa;
+    font-size: 0.9375rem;
+    font-weight: 300;
 }

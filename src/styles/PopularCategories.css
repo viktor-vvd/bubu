@@ -48,6 +48,7 @@
             position: relative;
             overflow: hidden;
         }
+
         .category-wrapper img {
             width: 11rem;
             cursor: pointer;

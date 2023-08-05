@@ -13,7 +13,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="container-horisontal promo-subscription-container">
-        <div className="container-horisontal promo-subscription-wrapper section-container">
+        <div className="container-horisontal promo-subscription-wrapper page-container">
           <div className="container-horisontal promo-subscription">
             <h2>
               Отримуйте ПРОМОКОДИ ТА
@@ -36,7 +36,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="container-horisontal footer-container">
-        <div className="container-vertical section-container">
+        <div className="container-vertical page-container">
           <div className="container-horisontal footer-middle-container">
             <div className="container-vertical contacts-wrapper">
               <h3>(063) 128-46-09</h3>

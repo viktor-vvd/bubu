@@ -14,10 +14,10 @@ import Catalogue from "./Catalogue";
 const Header = () => {
   return (
     <header className="header">
-      <div className="container-vertical section-container">
+      <div className="container-vertical page-container">
         <div className="container-horisontal header-container">
           <div className="container-horisontal">
-            <a href="#">
+            <a href="/home">
               <img className="logo" src={bubuLogoWhite} alt="bubu Logo" />
             </a>
             <nav className="container-horisontal inner-container">

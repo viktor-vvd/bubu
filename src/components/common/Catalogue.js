@@ -38,7 +38,7 @@ const Catalogue = () => {
             </li>
             <li>
               <img src={carriage} alt="menu" />
-              <a href="#">Дитячі коляски</a>
+              <a href="/catalogue">Дитячі коляски</a>
             </li>
             <li>
               <img src={room} alt="menu" />

@@ -20,7 +20,7 @@
 
 .arrow-button {
     position: relative;
-    z-index: 2;
+    z-index: 3;
 }
 
 .arrow-button img{
