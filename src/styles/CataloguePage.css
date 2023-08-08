@@ -15,6 +15,7 @@
     display: grid;
     gap: 1.88rem;
     grid-template-columns: 1fr 4.4fr;
+    justify-content: space-between;
     grid-template-areas:
         "header sort"
         "filters main"

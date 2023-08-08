@@ -10,46 +10,53 @@ import arrowRight from "../../assets/images/arrowRight.png";
 const Home = () => {
   const [isInfoFolded, setisInfoFolded] = useState(true);
   return (
-    <main className="container-vertical home-container page-container">
-      <section className="container-horisontal home-section-container">
-        <aside className="catalogue-placeholder"></aside>
+    <main className="container-vertical page-container home">
+      <section className="container-horisontal home__section">
+        <aside className="catalogue__placeholder"></aside>
         <SaleSlider />
       </section>
-      <section className="container-vertical home-section-container">
-        <div className="container-horisontal home-section-title-container">
-          <div className="container-horisontal home-section-title">
-            <h2>Акція!</h2>
-            <span>SALE</span>
+      <section className="container-vertical home__section products-section__container">
+        <div className="container-horisontal products-section__title__container">
+          <div className="container-horisontal products-section__title">
+            <h2 className="headline">Акція!</h2>
+            <span className="products-section__sale-badge">SALE</span>
           </div>
-          <div>
-            <img src={arrowRight} alt="arrow" />
-          </div>
+          <a href="#">
+            <img
+              className="products-section__title__icon"
+              src={arrowRight}
+              alt="arrow"
+            />
+          </a>
         </div>
         <ProductsSlider productsList={productsList} />
       </section>
-      <section className="container-vertical home-section-container">
-        <div className="container-horisontal home-section-title-container">
-          <div className="container-horisontal home-section-title">
-            <h2>Популярні Категорії</h2>
-            <span>SALE</span>
+      <section className="container-vertical home__section products-section__container">
+        <div className="container-horisontal products-section__title__container">
+          <div className="container-horisontal products-section__title">
+            <h2 className="headline">Популярні Категорії</h2>
           </div>
         </div>
         <PopularCategories />
       </section>
-      <section className="container-vertical home-section-container">
-        <div className="container-horisontal home-section-title-container">
-          <div className="container-horisontal home-section-title">
-            <h2>Популярні Бренди</h2>
+      <section className="container-vertical home-section-container products-section__container">
+        <div className="container-horisontal products-section__title__container">
+          <div className="container-horisontal products-section__title">
+            <h2 className="headline">Популярні Бренди</h2>
           </div>
-          <div>
-            <img src={arrowRight} alt="arrow" />
-          </div>
+          <a href="#">
+            <img
+              className="products-section__title__icon"
+              src={arrowRight}
+              alt="arrow"
+            />
+          </a>
         </div>
         <PopularBrands />
       </section>
-      <section className="container-vertical home-section-container home-short-info-container">
-        <div className="container-vertical home-short-info-section">
-          <p className={isInfoFolded ? "folded" : ""}>
+      <section className="container-vertical home__section home__short-info__section">
+        <div className="container-vertical home__short-info">
+          <p className={isInfoFolded ? "home__short-info__text home__short-info__text_folded" : "home__short-info__text"}>
             Інтернет-магазин дитячих товарів Бу-Бу - зона комфорту малюків і їх
             батьків. Наш асортимент розроблений в діапазоні "від народження до
             школи", завдяки чому кожен етап розвитку вашої дитини буде
@@ -77,10 +84,10 @@ const Home = () => {
           </span>
         </div>
       </section>
-      <section className="container-vertical home-section-container">
-        <div className="container-horisontal home-section-title-container">
-          <div className="container-horisontal home-section-title">
-            <h2>Ви переглядали</h2>
+      <section className="container-vertical home__section products-section__container">
+        <div className="container-horisontal products-section__title__container">
+          <div className="container-horisontal products-section__title">
+            <h2 className="headline">Ви переглядали</h2>
           </div>
         </div>
         <ProductsSlider productsList={productsList} />

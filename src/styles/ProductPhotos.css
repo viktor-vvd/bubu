@@ -1,0 +1,36 @@
+.product-photos {
+    gap: 0.62rem;
+    justify-content: flex-start;
+    grid-area: product-photos;
+}
+
+.product-photos__list {
+    gap: 0.62rem;
+    justify-content: flex-start;
+}
+
+.list__photo {
+    width: 5rem;
+    height: 5rem;
+    flex-shrink: 0;
+    border-radius: 0.625rem;
+    cursor: pointer;
+}
+
+.list__photo_active {
+    border: 1px solid #D03664;
+}
+
+.product-photos__slider_container {
+    width: fit-content;
+}
+
+.product-photos__slider {
+    max-height: 33.8125rem;
+    max-width: 33.75rem;
+    overflow: hidden;
+}
+
+.slider__photo {
+    height: 33.8125rem;
+}

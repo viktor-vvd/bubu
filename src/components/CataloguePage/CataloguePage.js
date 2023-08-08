@@ -7,14 +7,7 @@ import Filters from "./Filters";
 import Pagination from "../common/Pagination";
 
 const CataloguePage = () => {
-  const min = 100; /*for testing*/
-  const max = 30000; /*for testing*/
-  const [priceRangeValue, setPriceRangeValue] = useState([100, 30000]);
-  const [categoryExpanded, setCategoryExpanded] = useState(true);
-  const [priceExpanded, setPriceExpanded] = useState(true);
-  const [brandExpanded, setBrandExpanded] = useState(true);
   const [currentItems, setCurrentItems] = useState(null);
-
 
   return (
     <div className="container-vertical page-container catalogue-page">

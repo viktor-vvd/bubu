@@ -8,8 +8,6 @@ import popularBrand3 from "../../assets/images/popularBrand3.png";
 import popularBrand4 from "../../assets/images/popularBrand4.png";
 import popularBrand5 from "../../assets/images/popularBrand5.png";
 import popularBrand6 from "../../assets/images/popularBrand6.png";
-import leftArrow from "../../assets/images/salesSliderArrowLeft.png";
-import rightArrow from "../../assets/images/salesSliderArrowRight.png";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
@@ -17,21 +15,7 @@ import Slider from "react-slick";
 const PopularBrands = () => {
   const slider = React.useRef(null);
   return (
-    <div className="popular-brands-slider-container slider-container">
-      <div className="slider-arrows">
-        <div
-          className="arrow-button"
-          onClick={() => slider?.current?.slickPrev()}
-        >
-          <img src={leftArrow} alt="leftArrow" />
-        </div>
-        <div
-          className="arrow-button"
-          onClick={() => slider?.current?.slickNext()}
-        >
-          <img src={rightArrow} alt="rightArrow" />
-        </div>
-      </div>
+    <div className="slider__container popular-brands__slider__container">
       <Slider
         ref={slider}
         dots={false}
@@ -45,7 +29,7 @@ const PopularBrands = () => {
         cssEase="linear"
         responsive={[
             {
-              breakpoint: 1000,
+              breakpoint: 1050,
               settings: {
                 slidesToShow: 5,
               }
@@ -64,26 +48,26 @@ const PopularBrands = () => {
             }
           ]}
       >
-        <div className="popular-brand">
-          <img src={popularBrand0} alt="popularBrand" />
+        <div className="popular-brand__item">
+          <img className="popular-brand__item__icon" src={popularBrand0} alt="popularBrand" />
         </div>
-        <div className="popular-brand">
-          <img src={popularBrand1} alt="popularBrand" />
+        <div className="popular-brand__item">
+          <img className="popular-brand__item__icon" src={popularBrand1} alt="popularBrand" />
         </div>
-        <div className="popular-brand">
-          <img src={popularBrand2} alt="popularBrand" />
+        <div className="popular-brand__item">
+          <img className="popular-brand__item__icon" src={popularBrand2} alt="popularBrand" />
         </div>
-        <div className="popular-brand">
-          <img src={popularBrand3} alt="popularBrand" />
+        <div className="popular-brand__item">
+          <img className="popular-brand__item__icon" src={popularBrand3} alt="popularBrand" />
         </div>
-        <div className="popular-brand">
-          <img src={popularBrand4} alt="popularBrand" />
+        <div className="popular-brand__item">
+          <img className="popular-brand__item__icon" src={popularBrand4} alt="popularBrand" />
         </div>
-        <div className="popular-brand">
-          <img src={popularBrand5} alt="popularBrand" />
+        <div className="popular-brand__item">
+          <img className="popular-brand__item__icon" src={popularBrand5} alt="popularBrand" />
         </div>
-        <div className="popular-brand">
-          <img src={popularBrand6} alt="popularBrand" />
+        <div className="popular-brand__item">
+          <img className="popular-brand__item__icon" src={popularBrand6} alt="popularBrand" />
         </div>
       </Slider>
     </div>

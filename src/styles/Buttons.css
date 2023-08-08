@@ -4,14 +4,21 @@
     justify-content: center;
     align-items: center;
     gap: 0.625rem;
-    border-radius: 0.625rem;
-    font-family: Comfortaa;
-    font-size: 0.9375rem;
-    font-weight: 700;
     transition: all 0.25s ease-in-out;
+    border-radius: 0.625rem;
     border: 1px solid #D03664;
     background: #D03664;
+}
+
+.button__icon {
+    height: 1.0625rem;
+}
+
+.buton__text {
     color: #FFF;
+    font-size: 0.9375rem;
+    font-weight: 700;
+    white-space: nowrap;
 }
 
 .button:hover {
@@ -20,11 +27,14 @@
     background: #AA2B51;
 }
 
-.button-white {
+.button_white {
     background-color: transparent;
+}
+
+.buton__text_white {
     color: #D03664;
 }
 
-.button-white:hover {
+.button_white:hover {
     background: #FFEAF1;
 }

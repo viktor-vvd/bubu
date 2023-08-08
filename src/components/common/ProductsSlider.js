@@ -11,19 +11,19 @@ const ProductsSlider = ({productsList}) => {
   const slider = React.useRef(null);
 
   return (
-    <div className="slider-container">
-      <div className="slider-arrows">
+    <div className="slider__container">
+      <div className="slider__arrows">
         <div
-          className="arrow-button"
+          className="slider__arrow__button"
           onClick={() => slider?.current?.slickPrev()}
         >
-          <img src={leftArrow} alt="leftArrow" />
+          <img className="slider__arrow__icon" src={leftArrow} alt="leftArrow" />
         </div>
         <div
-          className="arrow-button"
+          className="slider__arrow__button"
           onClick={() => slider?.current?.slickNext()}
         >
-          <img src={rightArrow} alt="rightArrow" />
+          <img className="slider__arrow__icon" src={rightArrow} alt="rightArrow" />
         </div>
       </div>
       <Slider
@@ -35,6 +35,26 @@ const ProductsSlider = ({productsList}) => {
         slidesToShow={5}
         slidesToScroll={1}
         autoplay={false}
+        responsive={[
+          {
+            breakpoint: 1050,
+            settings: {
+              slidesToShow: 4,
+            }
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 3,
+            }
+          },
+          {
+            breakpoint: 320,
+            settings: {
+              slidesToShow: 2,
+            }
+          }
+        ]}
       >
         {productsList &&
           productsList.map((item, index) => (

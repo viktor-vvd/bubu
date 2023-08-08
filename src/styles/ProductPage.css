@@ -1,0 +1,449 @@
+.product-page {
+    width: 100%;
+    padding-top: 1.88rem;
+    padding-bottom: 5rem;
+    gap: 5rem;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.product-page__top-section {
+    width: 100%;
+    display: grid;
+    gap: 1.88rem;
+    grid-template-columns: 1fr 1fr;
+    justify-content: flex-start;
+    grid-template-areas:
+        "breadcrumbs breadcrumbs"
+        "header lists"
+        "short-info short-info"
+        "product-photos buying";
+}
+
+.breadcrumbs {
+    grid-area: breadcrumbs;
+}
+
+.top-section__header {
+    grid-area: header;
+    color: #000;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.top-section__lists {
+    grid-area: lists;
+    list-style-type: none;
+    justify-content: flex-end;
+    gap: 1.88rem;
+}
+
+.top-section__lists__item {
+    gap: 0.62rem;
+    cursor: pointer;
+}
+
+.top-section__lists__item__icon {
+    height: 1.1875rem;
+}
+
+.top-section__lists__item__text {
+    color: #A5A5A5;
+    font-size: 0.9375rem;
+    font-weight: 700;
+}
+
+.top-section__lists__item:hover .top-section__lists__item__text {
+    text-decoration: underline;
+}
+
+.top-section__lists__item__text_favorite {
+    color: #D03664;
+}
+
+.top-section__short-info {
+    grid-area: short-info;
+    justify-content: flex-start;
+    gap: 1.25rem;
+}
+
+.top-section__short-info__state {
+    padding: 0.81rem;
+    border-radius: 0.625rem;
+    font-weight: 400;
+}
+
+.top-section__short-info__state_avaliable {
+    background: #E9FFE7;
+    color: #23F911;
+}
+
+.top-section__short-info__state_unavaliable {
+    background: #FFE7E7;
+    color: #F91111;
+}
+
+.top-section__short-info__code {
+    padding: 0.81rem;
+    border-radius: 0.625rem;
+    background: #F2F2F2;
+    color: #585858;
+    font-size: 0.9375rem;
+    font-weight: 400;
+}
+
+.top-section__short-info__statistics {
+    gap: 0.62rem;
+}
+
+.top-section__short-info__rate {
+    color: var(--accent, #D03664);
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    vertical-align: middle;
+}
+
+.top-section__short-info__rate__icon {
+    width: 1.4375rem;
+    height: 1.4375rem;
+    padding: 0.125rem;
+}
+
+.top-section__short-info__statistics__comments {
+    color: #000;
+    font-size: 0.9375rem;
+    font-weight: 300;
+    text-decoration: underline;
+}
+
+.top-section__buying {
+    grid-area: buying;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 1.875rem;
+}
+
+.buying__options {
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 0.75rem;
+}
+
+.buying__options__title {
+    color: var(--grey, #585858);
+    font-size: 0.9375rem;
+    font-weight: 300;
+}
+
+.buying__options__container {
+    gap: 0.9375rem;
+    border: none;
+}
+
+.buying__option_color {
+    border-radius: 0.625rem;
+    width: 1.875rem;
+    height: 1.875rem;
+    transition: 0.2s all ease-in-out;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+}
+
+.buying__option_color:checked {
+    outline: 1px solid #D03664;
+    outline-offset: 0.25rem;
+}
+
+.buying__option_gender__container {
+    cursor: pointer;
+}
+
+.buying__option_gender {
+    display: none;
+}
+
+.buying__option_gender__label__container {
+    padding: 0.8125rem;
+    border-radius: 0.625rem;
+    border: 1px solid #C7C7C7;
+    transition: 0.2s all ease-in-out;
+}
+
+.buying__option_gender__label {
+    color: #000;
+    font-size: 0.9375rem;
+    font-weight: 400;
+}
+
+.buying__option_gender:checked~.buying__option_gender__label__container {
+    border: 1px solid #D03664;
+    background: #FFEAF1;
+}
+
+.buying__price__container {
+    gap: 0.94rem;
+}
+
+.buying__price {
+    color: #202020;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.buying__price__currency {
+    font-weight: 300;
+}
+
+.buying__price_old {
+    text-decoration: line-through;
+}
+
+.buying__price_new {
+    color: var(--discount, #F99C11);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.buying__price_discount {
+    padding: 0.4375rem;
+    border-radius: 0.3125rem;
+    background: #F99C11;
+    color: #FFF;
+    font-size: 0.9375rem;
+    font-weight: 700;
+}
+
+.buying__buttons__container {
+    gap: 1.25rem;
+}
+
+.buying__location__container {
+    width: 100%;
+    padding: 1.875rem;
+    align-items: flex-start;
+    gap: 1.25rem;
+    border-radius: 0.625rem;
+    background: #FFEAF1;
+}
+
+.location__adress__container {
+    gap: 0.625rem;
+    align-items: flex-start;
+}
+
+.location__adress__icon {
+    width: 0.83988rem;
+    flex-shrink: 0;
+}
+
+.location__adress {
+    color: #000;
+    font-size: 0.9375rem;
+    font-weight: 300;
+    line-height: 1.25rem;
+}
+
+.location__pick-up-today {
+    color: #D03664;
+    font-size: 0.9375rem;
+    font-weight: 700;
+}
+
+.buying__nav {
+    gap: 1.25rem;
+}
+
+.buying__nav__item {
+    color: #585858;
+    font-size: 0.9375rem;
+    font-weight: 300;
+}
+
+.product-page__middle__section__container {
+    width: 100%;
+    justify-content: space-around;
+    background-color: #FFEAF1;
+    padding: 5rem 0;
+    gap: 3.13rem;
+}
+
+.product-page__middle__section {
+    width: 100%;
+    display: grid;
+    gap: 1.88rem;
+    grid-template-columns: 4fr 3fr;
+    align-items: flex-start;
+    justify-content: flex-start;
+    grid-template-areas:
+        "description characteristics"
+}
+
+.middle__section__description {
+    grid-area: description;
+}
+
+.middle__section__content-block__container {
+    gap: 1.25rem;
+    align-items: flex-start;
+}
+
+.middle__section__block__header {
+    width: 100%;
+}
+
+.middle__section__block__header__fold-icon {
+    width: 0.875rem;
+    flex-shrink: 0;
+    transition: all 0.1s ease-in-out;
+    rotate: 180deg;
+    cursor: pointer;
+}
+
+.middle__section__block__header__fold-icon_expanded {
+    rotate: 0deg;
+}
+
+.middle__section__content-block {
+    width: 100%;
+    padding: 2.1875rem 1.875rem;
+    gap: 1.88rem;
+    align-items: flex-start;
+    border-radius: 0.625rem;
+    background: #FFF;
+    list-style-type: none;
+}
+
+.middle__section__content {
+    gap: 1.88rem;
+    align-items: flex-start;
+}
+
+.middle__section__content_folded {
+    height: 47.8rem;
+    overflow: hidden;
+}
+
+.middle__section__content__text {
+    color: #000;
+    font-size: 0.9375rem;
+    font-weight: 300;
+    line-height: 1.5625rem;
+}
+
+.details-container {
+    width: 100%;
+}
+
+.middle__section__characteristics {
+    grid-area: characteristics;
+}
+
+.content-block__characteristic {
+    align-items: flex-end;
+    width: 100%;
+    gap: 0.62rem;
+}
+
+.characteristic__divider {
+    width: 100%;
+    border: 1px solid #E1E1E1;
+}
+
+.characteristic {
+    white-space: nowrap;
+    font-size: 0.9375rem;
+    font-style: normal;
+}
+
+.characteristic_value {
+    font-weight: 400;
+}
+
+.characteristic_name {
+    font-weight: 300;
+}
+
+.product-page__comments__section {
+    width: 100%;
+    gap: 1.88rem;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.product-page__comments__section__header {
+    width: 100%;
+    justify-content: flex-start;
+    gap: 1.25rem;
+}
+
+.product-page__comments__section__header__rating {
+    align-items: flex-start;
+    gap: 0.63rem;
+}
+
+.product-page__comments__container {
+    gap: 1.88rem;
+    width: 100%;
+    max-height: 49.7rem;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.comment {
+    max-width: 25.5625rem;
+    width: 100%;
+    padding: 1.875rem;
+    align-items: flex-start;
+    gap: 0.9375rem;
+    border-radius: 0.625rem;
+    background: #FFF;
+    flex-shrink: 0;
+}
+
+.comment__date {
+    color: var(--lightgrey, #C7C7C7);
+    font-size: 0.9375rem;
+    font-weight: 400;
+}
+
+.comment__header {
+    width: 100%;
+    gap: 0.9375rem;
+}
+
+.comment__user-name {
+    color: #000;
+    font-size: 0.9375rem;
+    font-weight: 400;
+}
+
+.comment__rate__icon {
+    width: 1.25rem;
+    height: 1.25rem;
+    padding: 0.125rem;
+}
+
+.comment__content {
+    color: #000;
+    font-size: 0.9375rem;
+    font-weight: 300;
+    line-height: 1.5625rem;
+}
+
+.comment__images {
+    justify-content: flex-start;
+    gap: 0.625rem;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.comment__images__item{
+    width: 4.9375rem;
+    border-radius: 0.625rem;
+    overflow: hidden;
+}

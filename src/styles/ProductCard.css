@@ -1,11 +1,11 @@
-.card-container {
+.product-card {
     width: 14.6rem;
     height: 19.6rem;
     position: relative;
     z-index: 1;
 }
 
-.container-vertical.card-absolute-container {
+.product-card__absolute__container {
     width: 14.6rem;
     align-items: flex-start;
     gap: 0.8125rem;
@@ -17,18 +17,39 @@
     cursor: pointer;
 }
 
-.card-image-container {
+@media (max-width: 480px) {
+    .product-card {
+        width: 9.75rem;
+        height: 15.6rem;
+        position: relative;
+        z-index: 1;
+    }
+    
+    .product-card__absolute__container {
+        width: 9.75rem;
+        align-items: flex-start;
+        gap: 0.8125rem;
+        position: absolute;
+        overflow: hidden;
+        border-radius: 0.3125rem;
+        padding: 0.8125rem;
+        padding-top: 0;
+        cursor: pointer;
+    }
+}
+
+.product-card__image__container {
     width: 100%;
     border-radius: 0.625rem;
     overflow: hidden;
     position: relative;
 }
 
-.card-image-container img {
+.product-card__image {
     width: 100%;
 }
 
-.card-image-container .card-discount {
+.product-card__discount {
     padding: 0.4375rem;
     border-radius: 0.3125rem;
     background: #F99C11;
@@ -40,7 +61,7 @@
     left: 0.63rem;
 }
 
-.card-title {
+.product-card__title {
     color: #000;
     font-size: 0.9375rem;
     font-weight: 300;
@@ -50,57 +71,57 @@
     -webkit-box-orient: vertical;
 }
 
-.card-price-container {
+.product-card__price__container {
     gap: 0.31rem;
 }
 
-.card-price {
+.product-card__price {
     color: #202020;
     font-size: 0.875rem;
     font-weight: 700;
 }
 
-.card-price-currency {
+.product-card__price__currency {
     font-weight: 300;
 }
 
-.old {
+.product-card__price_old {
     text-decoration: line-through;
 }
 
-.card-new-price {
+.product-card__price_new {
     color: var(--discount, #F99C11);
     font-size: 1.0625rem;
     font-weight: 700;
 }
 
-.card-buttons-container {
+.product-card__buttons__container {
     opacity: 0;
     height: 0;
     gap: 0.94rem;
 }
 
-.card-buttons-container .unavaliable {
+.product-card_unavaliable {
     color: #F91111;
     font-size: 0.9375rem;
     font-weight: 400;
 }
 
-.card-buttons-container img {
+.product-card__buttons__icon {
     height: 1.21319rem;
     cursor: pointer;
 }
 
-.card-container:hover {
+.product-card:hover {
     overflow: visible;
     z-index: 2;
 }
 
-.card-container:hover .card-absolute-container {
+.product-card:hover .product-card__absolute__container {
     background: #FFF;
 }
 
-.card-container:hover .card-buttons-container {
+.product-card:hover .product-card__buttons__container {
     opacity: 1;
     height: fit-content;
 }

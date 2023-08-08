@@ -8,40 +8,40 @@ import { useNavigate } from "react-router-dom";
 const ProductCard = ({ item }) => {
   const navigate = useNavigate();
   return (
-    <div className="card-container" onClick={() => navigate("/product", { state: { item: item } })}>
-      <div className="container-vertical card-absolute-container">
-        <div className="container-vertical card-image-container">
-          <img src={item.product_image} alt="Product" />
+    <div className="product-card" onClick={() => navigate("/product", { state: { item: item } })}>
+      <div className="container-vertical product-card__absolute__container">
+        <div className="container-vertical product-card__image__container">
+          <img className="product-card__image" src={item.product_images[0]} alt="Product" />
           {item.discount > 0 && (
-            <span className="card-discount">-{item.discount}%</span>
+            <span className="product-card__discount">-{item.discount}%</span>
           )}
         </div>
-        <span className="card-title">{item.name}</span>
-        <div className="container-horisontal card-price-container">
-          <span className={"card-price" + (item.discount > 0 ? " old" : "")}>
+        <span className="product-card__title">{item.name}</span>
+        <div className="container-horisontal product-card__price__container">
+          <span className={"product-card__price" + (item.discount > 0 ? " product-card__price_old" : "")}>
             {item.price
               .toString()
               .replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, "$1 ")}{" "}
-            <span className="card-price-currency">грн</span>
+            <span className="product-card__price__currency">грн</span>
           </span>
           {item.discount > 0 && (
-            <span className="card-new-price">
+            <span className="product-card__price_new">
               {Math.round(item.price * (1 - item.discount / 100))
                 .toString()
                 .replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, "$1 ")}{" "}
-              <span className="card-price-currency">грн</span>
+              <span className="product-card__price__currency">грн</span>
             </span>
           )}
         </div>
-        <div className="container-horisontal card-buttons-container">
+        <div className="container-horisontal product-card__buttons__container">
           {item.is_avaliable ? (
             <>
               <ButtonDefault value="КУПИТИ" btntitle="КУПИТИ" />
-              <img src={favoriteDefault} alt="favorite" />
-              <img src={comparisonDefault} alt="сomparison" />
+              <img className="product-card__buttons__icon" src={favoriteDefault} alt="favorite" />
+              <img className="product-card__buttons__icon" src={comparisonDefault} alt="сomparison" />
             </>
           ) : (
-            <span className="unavaliable">Немає в наявності</span>
+            <span className="product-card_unavaliable">Немає в наявності</span>
           )}
         </div>
       </div>

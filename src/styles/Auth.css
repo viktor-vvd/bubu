@@ -5,48 +5,36 @@
     overflow: hidden;
 }
 
-.header-footer {
+.auth__waves {
     display: block;
     height: 12.5rem;
     flex-shrink: 0;
 }
 
-.auth-container {
+.auth__container {
     width: 100%;
     gap: 2.5rem;
 }
 
-.logo {
+.auth__logo {
     max-width: 11.875rem;
     width: 100%;
-    height: 2.74725rem;
-    flex-shrink: 0;
 }
 
-.form-container {
-    display: flex;
+.auth__form__container {
     max-width: 20.5rem;
     width: 100%;
-    flex-direction: column;
-    align-items: center;
+    justify-content: flex-start;
     gap: 1.875rem;
 }
 
-.form-container h1 {
-    font-size: 1.25rem;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-
-.form-container form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.auth__form {
+    justify-content: flex-start;
     gap: 1.25rem;
     width:100%;
 }
 
-.form-container form input {
+.auth__form__input {
     color: #000;
     font-family: Comfortaa;
     font-size: 0.9375rem;
@@ -58,12 +46,12 @@
     border: 1px solid #C7C7C7;
 }
 
-.form-container form input::placeholder {
+.auth__form__input::placeholder {
     color: #585858;
     font-size: 0.9375rem;
 }
 
-.form-container form a {
+.auth__link {
     color: #D03664;
     font-size: 0.9375rem;
     font-weight: 700;
@@ -71,53 +59,51 @@
     transition: all 0.25s ease-in-out;
 }
 
-.form-container form a:hover {
+.auth__link:hover {
     color: #AA2B51;
 }
 
-.button {
+.auth__button {
     width:100%;
 }
 
-.divider {
-    display: flex;
+.auth__divider {
     justify-content: center;
-    align-items: center;
     gap: 1.25rem;
     align-self: stretch;
 }
 
-.divider hr {
+.auth__divider__line {
     border: 0.0625rem solid #C7C7C7;
     width: 100%;
 }
 
-.divider span {
+.auth__divider__text {
     color: #585858;
     font-size: 0.9375rem;
     font-weight: 300;
 }
 
-.other-sign-in {
+.auth__alternative {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 0.9375rem;
 }
 
-.other-sign-in span {
+.auth__alternative__text {
     color: #000;
     font-size: 0.9375rem;
     font-weight: 300;
 }
 
-.other-sign-in div {
+.auth__alternative__icon__wrapper {
     display: flex;
     align-items: center;
     gap: 1.875rem;
 }
 
-.other-sign-in div img {
+.auth__alternative__icon {
     width: 2.5rem;
     height: 2.5rem;
     cursor: pointer;

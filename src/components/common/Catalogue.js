@@ -20,61 +20,61 @@ const Catalogue = () => {
   }
   const [isCatalogueExpanded, setisCatalogueExpanded] = useState(HomePageCheck());
   return (
-    <nav className="catalogue-container">
+    <nav className="catalogue">
       <ul
-        className={"catalogue-list" + (isCatalogueExpanded ? " expanded" : "")}
+        className={"catalogue__list" + (isCatalogueExpanded ? " catalogue__list_expanded" : "")}
       >
         <li
-          className="catalogue-button"
+          className="catalogue__list__item catalogue__list__button"
           onClick={() => setisCatalogueExpanded(!isCatalogueExpanded)}
         >
-          <img src={menu} alt="menu" />
-          <span>КАТАЛОГ</span>
+          <img className="catalogue__list__item__icon" src={menu} alt="menu" />
+          <span className="catalogue__list__button__text" >КАТАЛОГ</span>
         </li>
         {isCatalogueExpanded && (
           <>
-            <li>
-              <hr />
+            <li className="catalogue__list__item">
+              <hr className="catalogue__list__divider" />
             </li>
-            <li>
-              <img src={carriage} alt="menu" />
-              <a href="/catalogue">Дитячі коляски</a>
+            <li className="catalogue__list__item">
+              <img className="catalogue__list__item__icon" src={carriage} alt="menu" />
+              <a className="catalogue__list__item__text" href="/catalogue">Дитячі коляски</a>
             </li>
-            <li>
-              <img src={room} alt="menu" />
-              <a href="#">Дитяча кімната</a>
+            <li className="catalogue__list__item">
+              <img className="catalogue__list__item__icon" src={room} alt="menu" />
+              <a className="catalogue__list__item__text" href="#">Дитяча кімната</a>
             </li>
-            <li>
-              <img src={chair} alt="menu" />
-              <a href="#">Стільці і шезлонги</a>
+            <li className="catalogue__list__item">
+              <img className="catalogue__list__item__icon" src={chair} alt="menu" />
+              <a className="catalogue__list__item__text" href="#">Стільці і шезлонги</a>
             </li>
-            <li>
-              <img src={feeding} alt="menu" />
-              <a href="#">Для годування</a>
+            <li className="catalogue__list__item">
+              <img className="catalogue__list__item__icon" src={feeding} alt="menu" />
+              <a className="catalogue__list__item__text" href="#">Для годування</a>
             </li>
-            <li>
-              <img src={soap} alt="menu" />
-              <a href="#">Гігієна і догляд</a>
+            <li className="catalogue__list__item">
+              <img className="catalogue__list__item__icon" src={soap} alt="menu" />
+              <a className="catalogue__list__item__text" href="#">Гігієна і догляд</a>
             </li>
-            <li>
-              <img src={autochair} alt="menu" />
-              <a href="#">Автокрісла</a>
+            <li className="catalogue__list__item">
+              <img className="catalogue__list__item__icon" src={autochair} alt="menu" />
+              <a className="catalogue__list__item__text" href="#">Автокрісла</a>
             </li>
-            <li>
-              <img src={car} alt="menu" />
-              <a href="#">Дитячий транспорт</a>
+            <li className="catalogue__list__item">
+              <img className="catalogue__list__item__icon" src={car} alt="menu" />
+              <a className="catalogue__list__item__text" href="#">Дитячий транспорт</a>
             </li>
-            <li>
-              <img src={toy} alt="menu" />
-              <a href="#">Іграшки</a>
+            <li className="catalogue__list__item">
+              <img className="catalogue__list__item__icon" src={toy} alt="menu" />
+              <a className="catalogue__list__item__text" href="#">Іграшки</a>
             </li>
-            <li>
-              <img src={clothes} alt="menu" />
-              <a href="#">Одяг</a>
+            <li className="catalogue__list__item">
+              <img className="catalogue__list__item__icon" src={clothes} alt="menu" />
+              <a className="catalogue__list__item__text" href="#">Одяг</a>
             </li>
-            <li>
-              <img src={newIcon} alt="menu" />
-              <a href="#">Новий товар</a>
+            <li className="catalogue__list__item">
+              <img className="catalogue__list__item__icon" src={newIcon} alt="menu" />
+              <a className="catalogue__list__item__text" href="#">Новий товар</a>
             </li>
           </>
         )}

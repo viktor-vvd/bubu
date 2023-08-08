@@ -4,13 +4,13 @@ import ButtonWhite from "../common/ButtonWhite";
 const SignIn = ({ setisRegistered }) => {
   return (
     <>
-      <h1>Вхід</h1>
-      <form>
-        <input name="login" type="text" placeholder="Телефон або e-mail" />
-        <input name="password" type="password" placeholder="Пароль" />
-        <a href="#">Забули пароль?</a>
-        <ButtonDefault btntype="submit" btntitle="Увійти в акаунт" value="Увійти"/>
-        <ButtonWhite btntype="button" onclick={()=>setisRegistered(false)} btntitle="Зареєструватись" value="У мене немає акаунта"/>
+      <h1 className="headline">Вхід</h1>
+      <form className="container-vertical auth__form">
+        <input className="auth__form__input" name="login" type="text" placeholder="Телефон або e-mail" />
+        <input className="auth__form__input" name="password" type="password" placeholder="Пароль" />
+        <a className="auth__link" href="#">Забули пароль?</a>
+        <ButtonDefault className="auth__button" btntype="submit" btntitle="Увійти в акаунт" value="Увійти"/>
+        <ButtonWhite className="auth__button" btntype="button" onclick={()=>setisRegistered(false)} btntitle="Зареєструватись" value="У мене немає акаунта"/>
       </form>
     </>
   );

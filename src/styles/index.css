@@ -49,7 +49,7 @@
 }
 
 .breadcrumbs__item {
-    color: var(--accent, #D03664);
+    color: #D03664;
     font-family: Comfortaa;
     font-size: 0.9375rem;
     font-weight: 300;
@@ -62,8 +62,90 @@
 }
 
 .breadcrumbs__divider {
-    color: var(--accent, #D03664);
+    color: #D03664;
     font-family: Comfortaa;
     font-size: 0.9375rem;
     font-weight: 300;
+}
+
+.products-section__container {
+    gap: 2.06rem;
+    width: 100%;
+}
+
+.products-section__title__container {
+    width: 100%;
+}
+
+.products-section__title {
+    gap: 0.62rem;
+}
+
+.products-section__sale-badge {
+    padding: 0.3125rem;
+    border-radius: 0.625rem;
+    background: #FFF0D2;
+    color: #F99C11;
+    font-size: 0.9375rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.products-section__title__icon {
+    width: 1.25rem;
+    height: 1.25rem;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+.details {
+    color: var(--accent, #D03664);
+    font-size: 0.9375rem;
+    font-weight: 700;
+    text-decoration-line: underline;
+    cursor: pointer;
+}
+
+.headline {
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.subtitle {
+    font-size: 1.0625rem;
+    font-weight: 500;
+}
+
+.body-text {
+    font-size: 0.9375rem;
+    font-weight: 300;
+}
+
+.button-text {
+    font-size: 0.9375rem;
+    font-weight: 700;
+}
+
+@media (max-width: 480px) {
+    .headline {
+        font-size: 1.125rem;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    .body-text {
+        font-size: 0.875rem;
+        font-weight: 300;
+    }
+
+    .button-text {
+        font-size: 0.875rem;
+        font-weight: 700;
+    }
 }

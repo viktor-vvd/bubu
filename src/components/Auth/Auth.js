@@ -8,35 +8,48 @@ import Register from "./Register";
 import GoogleLogo from "../../assets/images/google.png";
 import FacebookLogo from "../../assets/images/facebook.png";
 
-
 const Auth = () => {
   const [isRegistered, setisRegistered] = useState(true);
   return (
     <div className="container-vertical auth">
-      <img className="header-footer" src={HeaderWaves} alt="Waves" />
-      <div className="container-vertical auth-container">
-        <img className="logo" src={bubuLogo} alt="bubu Logo" />
-        <div className="form-container">
+      <img className="auth__waves" src={HeaderWaves} alt="Waves" />
+      <div className="container-vertical page-container auth__container">
+        <a href="/home">
+          <img className="auth__logo" src={bubuLogo} alt="bubu Logo" />
+        </a>
+        <div className="container-vertical auth__form__container">
           {isRegistered ? (
             <SignIn setisRegistered={setisRegistered} />
           ) : (
             <Register setisRegistered={setisRegistered} />
           )}
-          <div className="divider">
-            <hr />
-            <span>Або</span>
-            <hr />
+          <div className="container-horisontal auth__divider">
+            <hr className="auth__divider__line" />
+            <span className="auth__divider__text">Або</span>
+            <hr className="auth__divider__line" />
           </div>
-          <div className="other-sign-in">
-            <span>Увійти за допомогою:</span>
-            <div>
-              <img src={GoogleLogo} alt="Google" title="Увійти з Google" />
-              <img src={FacebookLogo} alt="Facebook" title="Увійти з Facebook" />
+          <div className="auth__alternative">
+            <span className="auth__alternative__text">
+              Увійти за допомогою:
+            </span>
+            <div className="auth__alternative__icon__wrapper">
+              <img
+                className="auth__alternative__icon"
+                src={GoogleLogo}
+                alt="Google"
+                title="Увійти з Google"
+              />
+              <img
+                className="auth__alternative__icon"
+                src={FacebookLogo}
+                alt="Facebook"
+                title="Увійти з Facebook"
+              />
             </div>
           </div>
         </div>
       </div>
-      <img className="header-footer" src={FooterWaves} alt="Waves" />
+      <img className="auth__waves" src={FooterWaves} alt="Waves" />
     </div>
   );
 };

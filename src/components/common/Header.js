@@ -13,61 +13,61 @@ import Catalogue from "./Catalogue";
 
 const Header = () => {
   return (
-    <header className="header">
-      <div className="container-vertical page-container">
-        <div className="container-horisontal header-container">
+    <header className="container-vertical header__background">
+      <div className="container-vertical page-container header">
+        <div className="container-horisontal header__section">
           <div className="container-horisontal">
             <a href="/home">
-              <img className="logo" src={bubuLogoWhite} alt="bubu Logo" />
+              <img className="header__logo" src={bubuLogoWhite} alt="bubu Logo" />
             </a>
-            <nav className="container-horisontal inner-container">
-              <a href="#">Про нас</a>
-              <a href="#">Контакти</a>
-              <a href="#">Доставка і оплата</a>
-              <a href="#">Повернення і обмін</a>
+            <nav className="container-horisontal header__inner__container header__nav">
+              <a className="header__nav__item" href="#">Про нас</a>
+              <a className="header__nav__item" href="#">Контакти</a>
+              <a className="header__nav__item" href="#">Доставка і оплата</a>
+              <a className="header__nav__item" href="#">Повернення і обмін</a>
             </nav>
           </div>
-          <div className="container-horisontal">
-            <span className="phone">(063) 128-46-09</span>
-            <div className="container-horisontal inner-container">
-              <a href="#" className="socials-logo">
-                <img src={instagram} alt="instagram" />
+          <div className="container-horisontal header__container_top_right">
+            <span className="header__phone">(063) 128-46-09</span>
+            <div className="container-horisontal header__inner__container header__socials__pc">
+              <a href="#" >
+                <img className="header__socials__logo" src={instagram} alt="instagram" />
               </a>
-              <a href="#" className="socials-logo">
-                <img src={youtube} alt="youtube" />
+              <a href="#">
+                <img className="header__socials__logo" src={youtube} alt="youtube" />
               </a>
-              <a href="#" className="socials-logo">
-                <img src={facebookmini} alt="facebook" />
+              <a href="#">
+                <img className="header__socials__logo" src={facebookmini} alt="facebook" />
               </a>
             </div>
-            <div className="container-horisontal language-selector">
-              <a href="#">Укр</a>
-              <div className="vertical-divider" />
-              <a href="#" className="language-active">
+            <div className="container-horisontal header__language">
+              <a className="header__language__item" href="#">Укр</a>
+              <div className="header__language__divider" />
+              <a className="header__language__item header__language__item__active" href="#">
                 Рус
               </a>
             </div>
-            <div className="container-horisontal profile">
-              <img src={profile} alt="profile" />
-              <a href="/auth">Вхід</a>
+            <div className="container-horisontal header__profile">
+              <img className="header__profile__icon" src={profile} alt="profile" />
+              <a className="header__profile__link" href="/auth">Вхід</a>
             </div>
           </div>
         </div>
 
-        <div className="container-horisontal header-container">
+        <div className="container-horisontal header__section">
           <Catalogue />
           <SearchBar />
-          <a href="#" className="container-horisontal lists-container">
-            <img src={сomparison} alt="сomparison" />
-            <span>0</span>
+          <a href="#" className="container-horisontal header__list__container">
+            <img className="header__list__icon" src={сomparison} alt="сomparison" />
+            <span className="header__list__text" >0</span>
           </a>
-          <a href="#" className="container-horisontal lists-container">
+          <a href="#" className="container-horisontal header__list__container">
             <img src={favorite} alt="favorite" />
-            <span>0</span>
+            <span className="header__list__text">0</span>
           </a>
-          <a href="#" className="container-horisontal lists-container">
+          <a href="#" className="container-horisontal header__list__container">
             <img src={cart} alt="cart" />
-            <span className="cart-counter">1</span>
+            <span className="header__list__text header__list__cart__text">1</span>
           </a>
         </div>
       </div>

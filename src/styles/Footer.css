@@ -9,7 +9,7 @@
     overflow: hidden;
 }
 
-.footer .promo-subscription-container {
+.footer__top-section {
     width: 100%;
     align-items: center;
     justify-content: center;
@@ -19,33 +19,30 @@
     background-size: cover;
 }
 
-.promo-subscription-container .promo-subscription-wrapper {
+.footer__promo__wrapper {
     align-items: center;
     justify-content: start;
     gap: 6.88rem;
 }
 
-.promo-subscription {
+.footer__promo {
     gap: 1.88rem;
     max-width: 45.5rem;
     width: 100%;
 }
 
-.promo-subscription h2 {
+.footer__promo__header {
     color: #FFF;
     flex-shrink: 0;
-    font-size: 1.25rem;
-    font-weight: 700;
-    text-transform: uppercase;
 }
 
-.promo-subscription-form {
+.footer__promo__form {
     gap: 0.94rem;
     max-width: 22.7rem;
     width: 100%;
 }
 
-.promo-subscription-form input {
+.footer__promo__form__input {
     max-width: 18.35rem;
     width: 100%;
     text-overflow: ellipsis;
@@ -60,13 +57,13 @@
     flex-shrink: 0;
 }
 
-.promo-subscription-form input::placeholder {
+.footer__promo__form__input::placeholder {
     color: #FFF;
     font-size: 0.9375rem;
     font-weight: 400;
 }
 
-.promo-subscription-form button {
+.footer__promo__form__button {
     border: none;
     cursor: pointer;
     appearance: none;
@@ -76,16 +73,16 @@
     flex-shrink: 0;
 }
 
-.promo-subscription-form button img {
+.footer__promo__form__button__icon {
     width: 3rem;
     height: 3rem;
 }
 
-.promo-subscription-wrapper .footer-image {
+.footer__promo__image {
     width: 21.5625rem;
 }
 
-.footer-container {
+.footer__bottom-section {
     width: 100%;
     background: #D03664;
     padding-top: 3.75rem;
@@ -94,18 +91,18 @@
     justify-content: center;
 }
 
-.footer-container .page-container {
+.footer__bottom {
     gap: 2.5rem;
     align-items: start;
 }
 
-.footer-container .page-container .footer-middle-container {
+.footer__bottom__top-container {
     gap: 8.69rem;
     flex-wrap: wrap;
     justify-content: flex-start;
 }
 
-.footer-container .contacts-wrapper {
+.footer__bottom__contacts__wrapper {
     width: 18.75rem;
     padding: 1.875rem;
     align-items: flex-start;
@@ -114,56 +111,50 @@
     background: #AA2B51;
 }
 
-.footer-container .contacts-wrapper h3 {
+.footer__bottom__contacts__item {
     color: #FFF;
-    font-size: 1.25rem;
-    font-weight: 700;
-    text-transform: uppercase;
 }
 
-.footer-container .contacts-wrapper .email {
+.footer__bottom__contacts__email {
     text-decoration: underline;
 }
 
-.footer-container .contacts-wrapper span {
+.footer__bottom__contacts__adress {
     color: #FFF;
     font-size: 0.9375rem;
     font-weight: 300;
 }
 
-.socials-container {
+.footer__bottom__socials {
     display: flex;
     gap: 0.94rem;
 }
 
-.socials-logo {
+.footer__bottom__socials__icon {
     height: 1.25rem;
 }
 
-.footer-container .info-wrapper {
+.footer__bottom__info__wrapper {
     align-items: flex-start;
     gap: 1.25rem;
 }
 
-.footer-container .info-wrapper div {
+.footer__bottom__info__double-container {
     display: flex;
     gap: 3.13rem;
 }
 
-.footer-container .info-wrapper h3 {
+.footer__bottom__info__header {
     color: #FFF;
-    font-size: 1.25rem;
-    font-weight: 700;
-    text-transform: uppercase;
 }
 
-.footer-container .info-wrapper .info-container {
+.footer__bottom__info {
     align-items: flex-start;
     gap: 0.9375rem;
     list-style-type: none;
 }
 
-.footer-container .info-wrapper .info-container a {
+.footer__bottom__info__item {
     color: #FFF;
     font-size: 0.9375rem;
     font-weight: 300;
@@ -172,26 +163,30 @@
 }
 
 @media (min-width: 360px) {
-    .footer-container .info-wrapper .info-container a {
+    .footer__bottom__info__item {
         white-space: nowrap;
     }
 }
 
-.footer-container .info-wrapper .info-container a:hover {
+.footer__bottom__info__item:hover {
     text-decoration: underline;
 }
 
-.footer-bottom-container {
+.footer__bottom__bottom-container {
     gap: 0.62rem;
     align-items: flex-start;
 }
 
-.footer-bottom-container span {
+.footer__bottom__bottom-container__copyright {
     color: #F3A8BF;
     font-size: 0.875rem;
     font-weight: 300;
 }
 
-.footer-bottom-container .container-horisontal {
+.footer__bottom__bottom-container__paying {
     gap: 0.62rem;
+}
+
+.footer__bottom__bottom-container__paying__item {
+    height: 1.875rem;
 }

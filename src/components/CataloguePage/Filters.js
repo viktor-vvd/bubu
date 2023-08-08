@@ -19,7 +19,7 @@ const Filters = ({brandsList}) => {
               className="container-horisontal filter-group__header"
               onClick={() => setCategoryExpanded(!categoryExpanded)}
             >
-              <h2 className="filter-group__header__name">Категорія</h2>
+              <h2 className="subtitle">Категорія</h2>
               <img
                 className={
                   categoryExpanded
@@ -96,7 +96,7 @@ const Filters = ({brandsList}) => {
               className="container-horisontal filter-group__header"
               onClick={() => setPriceExpanded(!priceExpanded)}
             >
-              <h2 className="filter-group__header__name">Ціна</h2>
+              <h2 className="subtitle">Ціна</h2>
               <img
                 className={
                   priceExpanded
@@ -109,7 +109,7 @@ const Filters = ({brandsList}) => {
             </div>
             {priceExpanded && (
               <div className="container-vertical price-range">
-                <div className="price-range__slider__wrapper">
+                <div className="price-range__slider-wrapper">
                   <ReactSlider
                     value={priceRangeValue}
                     min={min}
@@ -174,7 +174,7 @@ const Filters = ({brandsList}) => {
               className="container-horisontal filter-group__header"
               onClick={() => setBrandExpanded(!brandExpanded)}
             >
-              <h2 className="filter-group__header__name">Категорія</h2>
+              <h2 className="subtitle">Категорія</h2>
               <img
                 className={
                   brandExpanded

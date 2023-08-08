@@ -12,119 +12,176 @@ import liqpay from "../../assets/images/liqpay.png";
 const Footer = () => {
   return (
     <footer className="footer">
-      <div className="container-horisontal promo-subscription-container">
-        <div className="container-horisontal promo-subscription-wrapper page-container">
-          <div className="container-horisontal promo-subscription">
-            <h2>
+      <div className="container-horisontal footer__top-section">
+        <div className="container-horisontal page-container footer__promo__wrapper">
+          <div className="container-horisontal footer__promo">
+            <h2 className="headline footer__promo__header">
               Отримуйте ПРОМОКОДИ ТА
               <br />
               ЕКСКЛЮЗИВНІ ПРОПОЗИЦІЇ
             </h2>
-            <form className="container-horisontal promo-subscription-form">
+            <form className="container-horisontal footer__promo__form">
               <input
+                className="footer__promo__form__input"
                 name="email"
                 type="text"
                 placeholder="Ваш email"
                 /* onkeyup="myFunction()" */
               />
-              <button type="submit">
-                <img src={ArrowRight} alt="ArrowRight" />
+              <button className="footer__promo__form__button" type="submit">
+                <img
+                  className="footer__promo__form__button__icon"
+                  src={ArrowRight}
+                  alt="ArrowRight"
+                />
               </button>
             </form>
           </div>
-          <img className="footer-image" src={footerImage} alt="mother" />
+          <img
+            className="footer__promo__image"
+            src={footerImage}
+            alt="mother"
+          />
         </div>
       </div>
-      <div className="container-horisontal footer-container">
-        <div className="container-vertical page-container">
-          <div className="container-horisontal footer-middle-container">
-            <div className="container-vertical contacts-wrapper">
-              <h3>(063) 128-46-09</h3>
-              <span className="email">bubu.shop2018@gmail.com</span>
-              <span>
+      <div className="container-horisontal footer__bottom-section">
+        <div className="container-vertical page-container footer__bottom">
+          <div className="container-horisontal footer__bottom__top-container">
+            <div className="container-vertical footer__bottom__contacts__wrapper">
+              <h3 className="headline footer__bottom__contacts__item">
+                (063) 128-46-09
+              </h3>
+              <span className="footer__bottom__contacts__item footer__bottom__contacts__email">
+                bubu.shop2018@gmail.com
+              </span>
+              <span className="footer__bottom__contacts__item footer__bottom__contacts__adress">
                 Одеса, вул. Михайлівська 8<br />
                 (щодня з 10:00 до 20:00)
               </span>
-              <div className="socials-container">
-                <a href="#" className="socials-logo">
-                  <img src={instagram} alt="instagram" />
+              <div className="footer__bottom__socials">
+                <a href="#">
+                  <img
+                    className="footer__bottom__socials__icon"
+                    src={instagram}
+                    alt="instagram"
+                  />
                 </a>
-                <a href="#" className="socials-logo">
-                  <img src={youtube} alt="youtube" />
+                <a href="#">
+                  <img
+                    className="footer__bottom__socials__icon"
+                    src={youtube}
+                    alt="youtube"
+                  />
                 </a>
-                <a href="#" className="socials-logo">
-                  <img src={facebookmini} alt="facebook" />
+                <a href="#">
+                  <img
+                    className="footer__bottom__socials__icon"
+                    src={facebookmini}
+                    alt="facebook"
+                  />
                 </a>
               </div>
             </div>
 
-            <div className="container-vertical info-wrapper">
-              <h3>Інформація</h3>
-              <ul className="container-vertical info-container">
+            <div className="container-vertical footer__bottom__info__wrapper">
+              <h3 className="headline footer__bottom__info__header">
+                Інформація
+              </h3>
+              <ul className="container-vertical footer__bottom__info">
                 <li>
-                  <a href="#">Про нас</a>
+                  <a className="footer__bottom__info__item" href="#">
+                    Про нас
+                  </a>
                 </li>
                 <li>
-                  <a href="#">Контакти</a>
+                  <a className="footer__bottom__info__item" href="#">
+                    Контакти
+                  </a>
                 </li>
                 <li>
-                  <a href="#">Доставка і оплата</a>
+                  <a className="footer__bottom__info__item" href="#">
+                    Доставка і оплата
+                  </a>
                 </li>
                 <li>
-                  <a href="#">Повернення та обмін</a>
+                  <a className="footer__bottom__info__item" href="#">
+                    Повернення та обмін
+                  </a>
                 </li>
                 <li>
-                  <a href="#">Політика конфеденційності</a>
+                  <a className="footer__bottom__info__item" href="#">
+                    Політика конфеденційності
+                  </a>
                 </li>
               </ul>
             </div>
 
-            <div className="container-vertical info-wrapper">
-              <h3>Каталог</h3>
-              <div>
-                <ul className="container-vertical info-container">
+            <div className="container-vertical footer__bottom__info__wrapper">
+              <h3 className="headline footer__bottom__info__header">Каталог</h3>
+              <div className="footer__bottom__info__double-container">
+                <ul className="container-vertical footer__bottom__info">
                   <li>
-                    <a href="#">Дитячі коляски</a>
+                    <a className="footer__bottom__info__item" href="#">
+                      Дитячі коляски
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Дитяча кімната</a>
+                    <a className="footer__bottom__info__item" href="#">
+                      Дитяча кімната
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Стільці і шезлонги</a>
+                    <a className="footer__bottom__info__item" href="#">
+                      Стільці і шезлонги
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Все для годування</a>
+                    <a className="footer__bottom__info__item" href="#">
+                      Все для годування
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Гігієна та догляд</a>
+                    <a className="footer__bottom__info__item" href="#">
+                      Гігієна та догляд
+                    </a>
                   </li>
                 </ul>
-                <ul className="container-vertical info-container">
+                <ul className="container-vertical footer__bottom__info">
                   <li>
-                    <a href="#">Автокрісла</a>
+                    <a className="footer__bottom__info__item" href="#">
+                      Автокрісла
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Дитячий транспорт</a>
+                    <a className="footer__bottom__info__item" href="#">
+                      Дитячий транспорт
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Іграшки</a>
+                    <a className="footer__bottom__info__item" href="#">
+                      Іграшки
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Дитячий одяг</a>
+                    <a className="footer__bottom__info__item" href="#">
+                      Дитячий одяг
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Новий товар</a>
+                    <a className="footer__bottom__info__item" href="#">
+                      Новий товар
+                    </a>
                   </li>
                 </ul>
               </div>
             </div>
           </div>
-          <div className="container-vertical footer-bottom-container">
-            <span>© Bubu 2022. Всі права захищені.</span>
-            <div className="container-horisontal">
-                <img src={mastercard} alt="mastercard" />
-                <img src={visa} alt="visa" />
-                <img src={liqpay} alt="liqpay" />
+          <div className="container-vertical footer__bottom__bottom-container">
+            <span className="footer__bottom__bottom-container__copyright">© Bubu 2022. Всі права захищені.</span>
+            <div className="container-horisontal footer__bottom__bottom-container__paying">
+              <img className="footer__bottom__bottom-container__paying__item" src={mastercard} alt="mastercard" />
+              <img className="footer__bottom__bottom-container__paying__item" src={visa} alt="visa" />
+              <img className="footer__bottom__bottom-container__paying__item" src={liqpay} alt="liqpay" />
             </div>
           </div>
         </div>

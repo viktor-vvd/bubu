@@ -20,11 +20,6 @@
     cursor: pointer;
 }
 
-.filter-group__header__name {
-    font-size: 1.0625rem;
-    font-weight: 500;
-}
-
 .filter-group__header__fold-icon {
     width: 0.6875rem;
     flex-shrink: 0;
@@ -62,7 +57,7 @@
     padding-top: 14px;
 }
 
-.price-range__slider__wrapper {
+.price-range__slider-wrapper {
     width: 100%;
     min-height: 28px;
 }

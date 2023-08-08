@@ -2,7 +2,7 @@
     width: 100%;
 }
 
-.search-bar input {
+.search-bar__input {
     background-image: url('/src/assets/images/search.png');
     background-position: right 0.9375rem bottom 50%;
     background-repeat: no-repeat;
@@ -20,7 +20,7 @@
     background-color: rgba(255, 255, 255, 0.15);
 }
 
-.search-bar input::placeholder {
+.search-bar__input::placeholder {
     color: #FFF;
     font-size: 0.9375rem;
 }
