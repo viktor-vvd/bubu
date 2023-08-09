@@ -28,6 +28,7 @@
 .header__logo {
     max-width: 8.625rem;
     width: 100%;
+    cursor: pointer;
 }
 
 .header__inner__container {
