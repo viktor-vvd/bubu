@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/bubu/static/css/main.f5cd9fd9.css",
-    "main.js": "/bubu/static/js/main.5cfdacf0.js",
+    "main.js": "/bubu/static/js/main.276e95ca.js",
     "static/js/787.ef9b9c23.chunk.js": "/bubu/static/js/787.ef9b9c23.chunk.js",
     "static/media/salesSlide.png": "/bubu/static/media/salesSlide.72f2d0cf9c41e54dbdf2.png",
     "static/media/Comfortaa-VariableFont_wght.ttf": "/bubu/static/media/Comfortaa-VariableFont_wght.4d2ab5de91c4d193a69f.ttf",
@@ -32,11 +32,11 @@
     "index.html": "/bubu/index.html",
     "static/media/checkboxInner.svg": "/bubu/static/media/checkboxInner.71e6a9b5eb8f8e0cf0aa.svg",
     "main.f5cd9fd9.css.map": "/bubu/static/css/main.f5cd9fd9.css.map",
-    "main.5cfdacf0.js.map": "/bubu/static/js/main.5cfdacf0.js.map",
+    "main.276e95ca.js.map": "/bubu/static/js/main.276e95ca.js.map",
     "787.ef9b9c23.chunk.js.map": "/bubu/static/js/787.ef9b9c23.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f5cd9fd9.css",
-    "static/js/main.5cfdacf0.js"
+    "static/js/main.276e95ca.js"
   ]
 }
