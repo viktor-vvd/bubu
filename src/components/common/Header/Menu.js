@@ -8,8 +8,10 @@ import youtube from "../../../assets/images/youtube.png";
 import profile from "../../../assets/images/profile.png";
 import "../../../styles/Menu.css";
 import Catalogue from "./Catalogue";
+import { useNavigate } from "react-router-dom";
 
 const Menu = () => {
+  const navigate = useNavigate();
   const [isMenuExpanded, setisMenuExpanded] = useState(false);
   return (
     <>
@@ -85,7 +87,7 @@ const Menu = () => {
                 src={profile}
                 alt="profile"
               />
-              <a className="header__profile__link" href="/auth">
+              <a className="header__profile__link" onClick={() => navigate("/auth")}>
                 Вхід
               </a>
             </div>

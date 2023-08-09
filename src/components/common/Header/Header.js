@@ -135,7 +135,7 @@ const Header = () => {
       <div className="container-horicontal page-container header_mobile">
         <div className="container-horisontal header-mobile__container">
           <Menu/>
-          <a href="/home">
+          <a onClick={() => navigate("/home")}>
             <img className="header__logo" src={bubuLogoWhite} alt="bubu Logo" />
           </a>
         </div>
