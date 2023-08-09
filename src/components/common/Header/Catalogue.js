@@ -12,10 +12,11 @@ import clothes from "../../../assets/images/clothes.png";
 import newIcon from "../../../assets/images/new.png";
 import arrowMenuBack from "../../../assets/images/arrowMenuBack.png";
 import "../../../styles/Catalogue.css";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 
 const Catalogue = () => {
+  const navigate = useNavigate();
   const location = useLocation();
   const [isCatalogueExpanded, setisCatalogueExpanded] = useState(false);
   const [windowSize, setWindowSize] = useState([
@@ -78,13 +79,13 @@ const Catalogue = () => {
                 <hr className="catalogue__list__divider" />
               </li>
             )}
-            <li className="catalogue__list__item">
+            <li className="catalogue__list__item" onClick={() => navigate("/catalogue")}>
               <img
                 className="catalogue__list__item__icon"
                 src={carriage}
                 alt="menu"
               />
-              <a className="catalogue__list__item__text" href="/#/catalogue">
+              <a className="catalogue__list__item__text" href="#">
                 Дитячі коляски
               </a>
             </li>

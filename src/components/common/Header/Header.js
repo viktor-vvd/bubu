@@ -11,8 +11,10 @@ import favorite from "../../../assets/images/favorite.png";
 import SearchBar from "../elements/SearchBar";
 import Catalogue from "./Catalogue";
 import Menu from "./Menu";
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
+  const navigate = useNavigate();
   const [windowSize, setWindowSize] = useState([
     window.innerWidth,
     window.innerHeight,
@@ -35,7 +37,7 @@ const Header = () => {
       <div className="container-vertical page-container header">
         <div className="container-horisontal header__section">
           <div className="container-horisontal">
-            <a href="/home">
+            <a href="#" onClick={() => navigate("/home")}>
               <img
                 className="header__logo"
                 src={bubuLogoWhite}
@@ -100,7 +102,7 @@ const Header = () => {
                 src={profile}
                 alt="profile"
               />
-              <a className="header__profile__link" href="/auth">
+              <a className="header__profile__link" href="#" onClick={() => navigate("/auth")}>
                 Вхід
               </a>
             </div>

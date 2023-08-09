@@ -8,7 +8,7 @@ import cart from "../../assets/images/cart.png";
 import location from "../../assets/images/location.png";
 import arrowRight from "../../assets/images/arrowRight.png";
 import arrowFiltersTop from "../../assets/images/arrowFiltersTop.png";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import ProductPhotos from "./ProductPhotos";
 import ButtonDefault from "../common/elements/ButtonDefault";
 import ButtonWhite from "../common/elements/ButtonWhite";
@@ -20,6 +20,7 @@ import { useEffect } from "react";
 import CartSuccessModal from "../common/Modals/CartSuccessModal";
 
 const ProductPage = () => {
+  const navigate = useNavigate();
   const { state } = useLocation();
   const { item } = state;
 
@@ -51,7 +52,7 @@ const ProductPage = () => {
       <section className="page-container product-page__top-section">
         <ul className="container-horisontal breadcrumbs">
           <li>
-            <a href="/home" className="body-text breadcrumbs__item">
+            <a href="#" className="body-text breadcrumbs__item" onClick={() => navigate("/home")}>
               Головна
             </a>
           </li>
@@ -61,7 +62,7 @@ const ProductPage = () => {
             </span>
           </li>
           <li>
-            <a href="/catalogue" className="body-text breadcrumbs__item">
+            <a href="#" className="body-text breadcrumbs__item" onClick={() => navigate("/catalogue")}>
               Дитячі коляски
             </a>
           </li>

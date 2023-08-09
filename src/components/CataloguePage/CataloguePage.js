@@ -6,8 +6,10 @@ import ProductCard from "../common/elements/ProductCard";
 import ButtonWhite from "../common/elements/ButtonWhite";
 import Filters from "./Filters";
 import Pagination from "../common/elements/Pagination";
+import { useNavigate } from "react-router-dom";
 
 const CataloguePage = () => {
+  const navigate = useNavigate();
   const [currentItems, setCurrentItems] = useState(null);
   const [isSortExpanded, setisSortExpanded] = useState(false);
   const [windowSize, setWindowSize] = useState([
@@ -31,7 +33,7 @@ const CataloguePage = () => {
       <div className="container-horisontal catalogue-page__section">
         <ul className="container-horisontal breadcrumbs">
           <li>
-            <a href="/home" className="body-text breadcrumbs__item">
+            <a href="#" className="body-text breadcrumbs__item" onClick={() => navigate("/home")}>
               Головна
             </a>
           </li>
