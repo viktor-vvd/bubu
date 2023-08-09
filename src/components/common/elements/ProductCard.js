@@ -1,8 +1,8 @@
 import React from "react";
-import "../../styles/ProductCard.css";
+import "../../../styles/ProductCard.css";
 import ButtonDefault from "./ButtonDefault";
-import favoriteDefault from "../../assets/images/favoriteDefault.png";
-import comparisonDefault from "../../assets/images/сomparisonDefault.png";
+import favoriteDefault from "../../../assets/images/favoriteDefault.png";
+import comparisonDefault from "../../../assets/images/сomparisonDefault.png";
 import { useNavigate } from "react-router-dom";
 
 const ProductCard = ({ item }) => {

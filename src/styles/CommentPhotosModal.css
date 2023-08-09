@@ -1,0 +1,30 @@
+.photo-modal__container {
+    position: fixed;
+    z-index: 11;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2.5rem 1rem;
+    align-items: flex-start;
+    gap: 1.25rem;
+    background: #FFF;
+    border-radius: 0.625rem;
+}
+
+.photo-modal__header {
+    width: 100%;
+    gap: 1.25rem;
+}
+
+.photo-modal__close-icon {
+    width: 1.25rem;
+    height: 1.25rem;
+    cursor: pointer;
+}
+
+@media (max-width: 650px) {
+    .photo-modal__container {
+        max-width: 22.5rem;
+        width: 100%;
+    }
+}

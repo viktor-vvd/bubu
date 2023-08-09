@@ -43,8 +43,6 @@
 
 .sort__item {
     color: #585858;
-    font-size: 0.9375rem;
-    font-weight: 300;
     text-decoration: underline;
     cursor: pointer;
     white-space: nowrap;
@@ -74,6 +72,7 @@
 
 .pagination__wrapper{
     width: 100%;
+    gap: 1.88rem;
 }
 
 .pagination__button_more{
@@ -141,5 +140,9 @@
     
     .sort__fold_expanded {
         rotate: 0deg;
+    }
+
+    .pagination__wrapper{
+        flex-direction: column;
     }
 }

@@ -50,9 +50,6 @@
 
 .breadcrumbs__item {
     color: #D03664;
-    font-family: Comfortaa;
-    font-size: 0.9375rem;
-    font-weight: 300;
     text-transform: capitalize;
     text-decoration: none;
 }
@@ -99,7 +96,7 @@
 }
 
 .details {
-    color: var(--accent, #D03664);
+    color: #D03664;
     font-size: 0.9375rem;
     font-weight: 700;
     text-decoration-line: underline;
@@ -127,7 +124,7 @@
     font-weight: 700;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 550px) {
     .headline {
         font-size: 1.125rem;
         font-weight: 700;
@@ -147,6 +144,10 @@
     .button-text {
         font-size: 0.875rem;
         font-weight: 700;
+    }
+
+    .details {
+        font-size: 0.875rem;
     }
 }
 

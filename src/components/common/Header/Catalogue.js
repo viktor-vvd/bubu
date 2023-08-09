@@ -1,42 +1,39 @@
 import React, { useState } from "react";
-import menu from "../../assets/images/menu.png";
-import carriage from "../../assets/images/carriage.png";
-import room from "../../assets/images/room.png";
-import chair from "../../assets/images/chair.png";
-import feeding from "../../assets/images/feeding.png";
-import soap from "../../assets/images/soap.png";
-import autochair from "../../assets/images/autochair.png";
-import car from "../../assets/images/car.png";
-import toy from "../../assets/images/toy.png";
-import clothes from "../../assets/images/clothes.png";
-import newIcon from "../../assets/images/new.png";
-import arrowMenuBack from "../../assets/images/arrowMenuBack.png";
-import "../../styles/Catalogue.css";
+import menu from "../../../assets/images/menu.png";
+import carriage from "../../../assets/images/carriage.png";
+import room from "../../../assets/images/room.png";
+import chair from "../../../assets/images/chair.png";
+import feeding from "../../../assets/images/feeding.png";
+import soap from "../../../assets/images/soap.png";
+import autochair from "../../../assets/images/autochair.png";
+import car from "../../../assets/images/car.png";
+import toy from "../../../assets/images/toy.png";
+import clothes from "../../../assets/images/clothes.png";
+import newIcon from "../../../assets/images/new.png";
+import arrowMenuBack from "../../../assets/images/arrowMenuBack.png";
+import "../../../styles/Catalogue.css";
 import { useLocation } from "react-router-dom";
-import { useRef } from "react";
 import { useEffect } from "react";
 
 const Catalogue = () => {
-  function HomePageCheck() {
-    const location = useLocation();
-    return location.pathname === "/home";
-  }
+  const location = useLocation();
   const [isCatalogueExpanded, setisCatalogueExpanded] = useState(false);
-  /* const [isCatalogueExpanded, setisCatalogueExpanded] = useState(HomePageCheck()); */
   const [windowSize, setWindowSize] = useState([
     window.innerWidth,
     window.innerHeight,
   ]);
 
   useEffect(() => {
+    setisCatalogueExpanded(location.pathname === "/home");
+
     const handleWindowResize = () => {
       setWindowSize([window.innerWidth, window.innerHeight]);
     };
 
-    window.addEventListener('resize', handleWindowResize);
+    window.addEventListener("resize", handleWindowResize);
 
     return () => {
-      window.removeEventListener('resize', handleWindowResize);
+      window.removeEventListener("resize", handleWindowResize);
     };
   }, []);
   return (
@@ -49,16 +46,16 @@ const Catalogue = () => {
       >
         {windowSize[0] < 1050 && isCatalogueExpanded ? (
           <li
-          className="catalogue__list__item"
-          onClick={() => setisCatalogueExpanded(false)}
-        >
-          <img
-                className="catalogue__list__item__icon catalogue__list__item__icon_back"
-                src={arrowMenuBack}
-                alt="MenuBack"
-              />
-              <span className="subtitle">Меню</span>
-        </li>
+            className="catalogue__list__item"
+            onClick={() => setisCatalogueExpanded(false)}
+          >
+            <img
+              className="catalogue__list__item__icon catalogue__list__item__icon_back"
+              src={arrowMenuBack}
+              alt="MenuBack"
+            />
+            <span className="subtitle">Меню</span>
+          </li>
         ) : (
           <li
             className="catalogue__list__item catalogue__list__button"
@@ -74,9 +71,13 @@ const Catalogue = () => {
         )}
         {isCatalogueExpanded && (
           <>
-            {windowSize[0] < 1050 && isCatalogueExpanded ? (<></>):(<li className="catalogue__list__item">
-              <hr className="catalogue__list__divider" />
-            </li>)}
+            {windowSize[0] < 1050 && isCatalogueExpanded ? (
+              <></>
+            ) : (
+              <li className="catalogue__list__item">
+                <hr className="catalogue__list__divider" />
+              </li>
+            )}
             <li className="catalogue__list__item">
               <img
                 className="catalogue__list__item__icon"

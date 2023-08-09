@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "../../styles/Pagination.css";
+import "../../../styles/Pagination.css";
 import ReactPaginate from "react-paginate";
 
 const Pagination = ({ items, itemsPerPage, setCurrentItems }) => {
@@ -27,14 +27,14 @@ const Pagination = ({ items, itemsPerPage, setCurrentItems }) => {
         pageCount={pageCount}
         previousLabel=""
         pageClassName="container-horisontal pagination__item"
-        pageLinkClassName="pagination__item__link"
+        pageLinkClassName="subtitle pagination__item__link"
         previousClassName="pagination__button"
-        previousLinkClassName="pagination__button__link pagination__button__link_previous"
+        previousLinkClassName="subtitle pagination__button__link pagination__button__link_previous"
         nextClassName="pagination__button"
-        nextLinkClassName="pagination__button__link"
+        nextLinkClassName="subtitle pagination__button__link"
         breakLabel="..."
         breakClassName="container-horisontal pagination__item"
-        breakLinkClassName="pagination__item__link"
+        breakLinkClassName="subtitle pagination__item__link"
         containerClassName="container-horisontal pagination"
         activeClassName="pagination__item pagination__item_active"
         disabledClassName="pagination__button_disabled"

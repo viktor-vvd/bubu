@@ -23,8 +23,7 @@
 }
 
 .pagination__item__link {
-    font-size: 1.0625rem;
-    font-weight: 500;
+    text-decoration: none;
 }
 
 .pagination__button{

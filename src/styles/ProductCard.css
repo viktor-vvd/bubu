@@ -106,7 +106,7 @@
 }
 
 
-@media (max-width: 480px) {
+@media (max-width: 550px) {
     .product-card {
         width: 9.75rem;
         height: 15.6rem;

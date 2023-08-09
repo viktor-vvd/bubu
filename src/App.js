@@ -1,10 +1,8 @@
 import "./App.css";
 import "./styles/index.css";
 import AppRouter from "./AppRouter";
-import Auth from "./components/Auth/Auth";
-import Header from "./components/common/Header";
-import Home from "./components/Home/Home";
-import Footer from "./components/common/Footer";
+import Header from "./components/common/Header/Header";
+import Footer from "./components/common/Footer/Footer";
 import { useLocation } from "react-router-dom";
 
 function App() {

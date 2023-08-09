@@ -1,0 +1,99 @@
+.new-comment-modal__container {
+    max-width: 22.5rem;
+    width:100%;
+    position: fixed;
+    z-index: 11;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1.875rem 1.25rem;
+    align-items: flex-start;
+    gap: 1.875rem;
+    background: #FFF;
+    border-radius: 0.625rem; 
+}
+
+.new-comment-modal__header{
+    width: 100%;
+    gap: 1.25rem;
+}
+
+.new-comment-modal__close-icon {
+    width: 1.25rem;
+    height: 1.25rem;
+    cursor: pointer;
+}
+
+.new-comment-modal__form{
+    gap: 1.88rem;
+    width: 100%;
+    align-items: flex-start;
+}
+
+.new-comment-modal__form__inputs__container{
+    gap: 1.25rem;
+    width: 100%;
+    align-items: flex-start;
+}
+
+.new-comment-modal__form__rate{
+    justify-content: flex-start;
+    gap:0.62rem;
+}
+
+.checkbox__star{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 2.5rem;
+    height: 2.5rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: url("../assets/images/star2.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-origin: padding-box;
+}
+
+.checkbox__star:checked{
+    background: url("../assets/images/star1.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-origin: padding-box;
+}
+
+.checkbox__star:hover{
+    background: url("../assets/images/star1.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-origin: padding-box;
+}
+
+.new-comment-modal__form__input{
+    padding: 1.25rem;
+    width:100%;
+    color: #000;
+    text-overflow: ellipsis;
+    border-radius: 0.3125rem;
+    border: 1px solid #C7C7C7;
+    resize: none;
+}
+
+.new-comment-modal__form__input::placeholder {
+    color: #585858;
+    font-size: 0.9375rem;
+}
+
+.new-comment-modal__form__add-image{
+    width: 100%;
+    justify-content: center;
+    gap: 0.62rem;
+}
+
+.new-comment-modal__form__add-image__icon{
+    width: 1rem;
+}
+
+.new-comment-modal__form__button{
+    width: 100%;
+}

@@ -1,6 +1,6 @@
 import React from "react";
-import ButtonDefault from "../common/ButtonDefault";
-import ButtonWhite from "../common/ButtonWhite";
+import ButtonDefault from "../common/elements/ButtonDefault";
+import ButtonWhite from "../common/elements/ButtonWhite";
 
 const Register = ({ setisRegistered }) => {
   return (

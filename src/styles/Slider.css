@@ -28,7 +28,7 @@
     cursor: pointer;
     border-radius: 100%;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1050px) {
     .slider__arrow__icon{
         width: 3rem;
         height: 3rem;

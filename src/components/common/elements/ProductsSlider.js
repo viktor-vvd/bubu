@@ -1,7 +1,7 @@
 import React from "react";
-import "../../styles/Slider.css";
-import leftArrow from "../../assets/images/salesSliderArrowLeft.png";
-import rightArrow from "../../assets/images/salesSliderArrowRight.png";
+import "../../../styles/Slider.css";
+import leftArrow from "../../../assets/images/salesSliderArrowLeft.png";
+import rightArrow from "../../../assets/images/salesSliderArrowRight.png";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";

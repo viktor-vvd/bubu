@@ -50,9 +50,6 @@
     text-overflow: ellipsis;
     padding: 0.94rem;
     color: #FFF;
-    font-family: Comfortaa;
-    font-size: 0.9375rem;
-    font-weight: 300;
     border-radius: 0.625rem;
     border: 1px solid #FFF;
     background-color: rgba(255, 255, 255, 0.15);
@@ -132,8 +129,6 @@
 
 .footer__bottom__contacts__adress {
     color: #FFF;
-    font-size: 0.9375rem;
-    font-weight: 300;
 }
 
 .footer__bottom__socials {
@@ -167,8 +162,6 @@
 
 .footer__bottom__info__item {
     color: #FFF;
-    font-size: 0.9375rem;
-    font-weight: 300;
     text-decoration: none;
 }
 
@@ -207,12 +200,15 @@
         width: 100%;
         background: none;
     }
+    
     .footer__middle-section{
         display: flex;
     }
+
     .footer__bottom .footer__bottom__contacts__wrapper{
         display: none;
     }
+
     .footer__promo{
         flex-direction: column;
         gap:0.94rem;
@@ -230,8 +226,6 @@
 }
 
 @media (max-width: 480px) {
-    
-
     .footer__top-section {
         background: #F99C11;
         height: 11.875rem;

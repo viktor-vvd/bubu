@@ -10,8 +10,8 @@
 
     .category__wrapper {
         display: flex;
-        align-items: start;
-        justify-content: end;
+        align-items: flex-start;
+        justify-content: flex-end;
         flex: 1 0 0;
         border-radius: 1.25rem;
         align-self: stretch;
@@ -95,8 +95,8 @@
         .category__wrapper {
             height: 11.25rem;
             display: flex;
-            align-items: start;
-            justify-content: end;
+            align-items: flex-start;
+            justify-content: flex-end;
             flex: 1 0 0;
             border-radius: 1.25rem;
             align-self: stretch;

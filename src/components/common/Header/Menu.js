@@ -1,12 +1,12 @@
 import React from "react";
 import { useState } from "react";
-import menuMobile from "../../assets/images/menuMobile.png";
-import close from "../../assets/images/close.png";
-import facebookmini from "../../assets/images/facebookmini.png";
-import instagram from "../../assets/images/instagram.png";
-import youtube from "../../assets/images/youtube.png";
-import profile from "../../assets/images/profile.png";
-import "../../styles/Menu.css";
+import menuMobile from "../../../assets/images/menuMobile.png";
+import close from "../../../assets/images/close.png";
+import facebookmini from "../../../assets/images/facebookmini.png";
+import instagram from "../../../assets/images/instagram.png";
+import youtube from "../../../assets/images/youtube.png";
+import profile from "../../../assets/images/profile.png";
+import "../../../styles/Menu.css";
 import Catalogue from "./Catalogue";
 
 const Menu = () => {

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import "../../styles/SearchBar.css";
-import searchMobile from "../../assets/images/searchMobile.png";
-import close from "../../assets/images/close.png";
+import "../../../styles/SearchBar.css";
+import searchMobile from "../../../assets/images/searchMobile.png";
+import close from "../../../assets/images/close.png";
 
 const SearchBar = () => {
   const [windowSize, setWindowSize] = useState([

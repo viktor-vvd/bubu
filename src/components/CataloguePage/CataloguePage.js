@@ -2,10 +2,10 @@ import React, { useEffect, useState } from "react";
 import "../../styles/CataloguePage.css";
 import { productsList, brandsList } from "../../db";
 import arrowFiltersTop from "../../assets/images/arrowFiltersTop.png";
-import ProductCard from "../common/ProductCard";
-import ButtonWhite from "../common/ButtonWhite";
+import ProductCard from "../common/elements/ProductCard";
+import ButtonWhite from "../common/elements/ButtonWhite";
 import Filters from "./Filters";
-import Pagination from "../common/Pagination";
+import Pagination from "../common/elements/Pagination";
 
 const CataloguePage = () => {
   const [currentItems, setCurrentItems] = useState(null);
@@ -31,12 +31,12 @@ const CataloguePage = () => {
       <div className="container-horisontal catalogue-page__section">
         <ul className="container-horisontal breadcrumbs">
           <li>
-            <a href="/home" className="breadcrumbs__item">
+            <a href="/home" className="body-text breadcrumbs__item">
               Головна
             </a>
           </li>
           <li>
-            <span className="breadcrumbs__divider">&nbsp;{">"}&nbsp;</span>
+            <span className="body-text breadcrumbs__divider">&nbsp;{">"}&nbsp;</span>
           </li>
         </ul>
       </div>
@@ -50,7 +50,7 @@ const CataloguePage = () => {
                 windowSize[0] < 550 && setisSortExpanded(!isSortExpanded);
               }}
             >
-              <span className="sort__item sort__item_selected">
+              <span className="body-text sort__item sort__item_selected">
                 За замовчуванням
               </span>
               {windowSize[0] < 550 && (
@@ -68,13 +68,13 @@ const CataloguePage = () => {
             {windowSize[0] > 550 || isSortExpanded ? (
               <>
                 <li>
-                  <span className="sort__item">По популярності</span>
+                  <span className="body-text sort__item">По популярності</span>
                 </li>
                 <li>
-                  <span className="sort__item">Дешевші</span>
+                  <span className="body-text sort__item">Дешевші</span>
                 </li>
                 <li>
-                  <span className="sort__item">Дорожчі</span>
+                  <span className="body-text sort__item">Дорожчі</span>
                 </li>
               </>
             ) : (
@@ -98,7 +98,7 @@ const CataloguePage = () => {
             />
             <Pagination
               items={productsList}
-              itemsPerPage={7}
+              itemsPerPage={windowSize[0] > 1370?(32):(windowSize[0] > 1110?(21):(windowSize[0] > 840?(16):(18)))}
               setCurrentItems={setCurrentItems}
             />
           </div>

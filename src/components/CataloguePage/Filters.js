@@ -3,10 +3,10 @@ import "../../styles/Filters.css";
 import arrowFiltersTop from "../../assets/images/arrowFiltersTop.png";
 import arrowRightButton from "../../assets/images/arrowRightButton.png";
 import filter from "../../assets/images/filter.png";
-import Checkbox from "../common/Checkbox";
+import Checkbox from "../common/elements/Checkbox";
 import ReactSlider from "react-slider";
-import ButtonDefault from "../common/ButtonDefault";
-import FilterBadge from "../common/FilterBadge";
+import ButtonDefault from "../common/elements/ButtonDefault";
+import FilterBadge from "../common/elements/FilterBadge";
 import close from "../../assets/images/close.png";
 import { useEffect } from "react";
 
@@ -73,27 +73,27 @@ const Filters = ({ brandsList }) => {
                 {categoryExpanded && (
                   <ul className="container-vertical filter-group__filter-list">
                     <li className="filter-list__item">
-                      <a href="#" className="filter-list__item__label">
+                      <a href="#" className="body-text filter-list__item__label">
                         Коляски 3в1
                       </a>
                     </li>
                     <li className="filter-list__item">
-                      <a href="#" className="filter-list__item__label">
+                      <a href="#" className="body-text filter-list__item__label">
                         Зимові конверти
                       </a>
                     </li>
                     <li className="filter-list__item">
-                      <a href="#" className="filter-list__item__label">
+                      <a href="#" className="body-text filter-list__item__label">
                         Аксесуари та комплектуючі
                       </a>
                     </li>
                     <li className="filter-list__item">
-                      <a href="#" className="filter-list__item__label">
+                      <a href="#" className="body-text filter-list__item__label">
                         Коляски для двійні
                       </a>
                     </li>
                     <li className="filter-list__item">
-                      <a href="#" className="filter-list__item__label">
+                      <a href="#" className="body-text filter-list__item__label">
                         Муфти
                       </a>
                     </li>

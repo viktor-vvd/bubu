@@ -1,6 +1,6 @@
 import React from "react";
-import "../../styles/FilterBadge.css";
-import closeDefault from "../../assets/images/closeDefault.png";
+import "../../../styles/FilterBadge.css";
+import closeDefault from "../../../assets/images/closeDefault.png";
 
 const FilterBadge = ({
   icon = null,
@@ -18,7 +18,7 @@ const FilterBadge = ({
       }
       title={title}
     >
-      <span className="filter-badge__text">{value}</span>
+      <span className="body-text filter-badge__text">{value}</span>
       <img className="filter-badge__icon" src={closeDefault} alt="arrow" onClick={onclick} />
     </div>
   );

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import SaleSlider from "./SaleSlider";
 import "../../styles/Home.css";
 import { productsList } from "../../db";
-import ProductsSlider from "../common/ProductsSlider";
+import ProductsSlider from "../common/elements/ProductsSlider";
 import PopularCategories from "./PopularCategories";
 import PopularBrands from "./PopularBrands";
 import arrowRight from "../../assets/images/arrowRight.png";

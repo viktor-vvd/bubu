@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from "react";
-import "../../styles/Header.css";
-import bubuLogoWhite from "../../assets/images/bubuLogoWhite.png";
-import facebookmini from "../../assets/images/facebookmini.png";
-import instagram from "../../assets/images/instagram.png";
-import youtube from "../../assets/images/youtube.png";
-import profile from "../../assets/images/profile.png";
-import cart from "../../assets/images/cart.png";
-import сomparison from "../../assets/images/сomparison.png";
-import favorite from "../../assets/images/favorite.png";
-import SearchBar from "./SearchBar";
+import "../../../styles/Header.css";
+import bubuLogoWhite from "../../../assets/images/bubuLogoWhite.png";
+import facebookmini from "../../../assets/images/facebookmini.png";
+import instagram from "../../../assets/images/instagram.png";
+import youtube from "../../../assets/images/youtube.png";
+import profile from "../../../assets/images/profile.png";
+import cart from "../../../assets/images/cart.png";
+import сomparison from "../../../assets/images/сomparison.png";
+import favorite from "../../../assets/images/favorite.png";
+import SearchBar from "../elements/SearchBar";
 import Catalogue from "./Catalogue";
 import Menu from "./Menu";
 
