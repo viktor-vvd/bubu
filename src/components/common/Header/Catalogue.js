@@ -24,7 +24,7 @@ const Catalogue = () => {
   ]);
 
   useEffect(() => {
-    setisCatalogueExpanded(location.pathname.includes("/home"));
+    setisCatalogueExpanded(location.pathname.includes("home"));
 
     const handleWindowResize = () => {
       setWindowSize([window.innerWidth, window.innerHeight]);
