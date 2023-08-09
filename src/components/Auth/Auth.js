@@ -14,7 +14,7 @@ const Auth = () => {
     <div className="container-vertical auth">
       <img className="auth__waves" src={HeaderWaves} alt="Waves" />
       <div className="container-vertical page-container auth__container">
-        <a href="/home">
+        <a href="/bubu/home">
           <img className="auth__logo" src={bubuLogo} alt="bubu Logo" />
         </a>
         <div className="container-vertical auth__form__container">

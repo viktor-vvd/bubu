@@ -8,7 +8,7 @@ import { useNavigate } from "react-router-dom";
 const ProductCard = ({ item }) => {
   const navigate = useNavigate();
   return (
-    <div className="product-card" onClick={() => navigate("/product", { state: { item: item } })}>
+    <div className="product-card" onClick={() => navigate("/bubu/product", { state: { item: item } })}>
       <div className="container-vertical product-card__absolute__container">
         <div className="container-vertical product-card__image__container">
           <img className="product-card__image" src={item.product_images[0]} alt="Product" />
