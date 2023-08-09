@@ -84,7 +84,7 @@ const Catalogue = () => {
                 src={carriage}
                 alt="menu"
               />
-              <a className="catalogue__list__item__text" href="/catalogue">
+              <a className="catalogue__list__item__text" href="/#/catalogue">
                 Дитячі коляски
               </a>
             </li>
