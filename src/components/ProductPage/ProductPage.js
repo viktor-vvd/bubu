@@ -52,7 +52,7 @@ const ProductPage = () => {
       <section className="page-container product-page__top-section">
         <ul className="container-horisontal breadcrumbs">
           <li>
-            <a href="#" className="body-text breadcrumbs__item" onClick={() => navigate("/home")}>
+            <a className="body-text breadcrumbs__item" onClick={() => navigate("/home")}>
               Головна
             </a>
           </li>
@@ -62,7 +62,7 @@ const ProductPage = () => {
             </span>
           </li>
           <li>
-            <a href="#" className="body-text breadcrumbs__item" onClick={() => navigate("/catalogue")}>
+            <a className="body-text breadcrumbs__item" onClick={() => navigate("/catalogue")}>
               Дитячі коляски
             </a>
           </li>

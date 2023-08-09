@@ -79,13 +79,13 @@ const Catalogue = () => {
                 <hr className="catalogue__list__divider" />
               </li>
             )}
-            <li className="catalogue__list__item" onClick={() => navigate("/catalogue")}>
+            <li className="catalogue__list__item">
               <img
                 className="catalogue__list__item__icon"
                 src={carriage}
                 alt="menu"
               />
-              <a className="catalogue__list__item__text" href="#">
+              <a className="catalogue__list__item__text" onClick={() => navigate("/catalogue")}>
                 Дитячі коляски
               </a>
             </li>

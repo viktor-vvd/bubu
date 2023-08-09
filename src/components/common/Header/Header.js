@@ -37,7 +37,7 @@ const Header = () => {
       <div className="container-vertical page-container header">
         <div className="container-horisontal header__section">
           <div className="container-horisontal">
-            <a href="#" onClick={() => navigate("/home")}>
+            <a onClick={() => navigate("/home")}>
               <img
                 className="header__logo"
                 src={bubuLogoWhite}
@@ -102,7 +102,7 @@ const Header = () => {
                 src={profile}
                 alt="profile"
               />
-              <a className="header__profile__link" href="#" onClick={() => navigate("/auth")}>
+              <a className="header__profile__link" onClick={() => navigate("/auth")}>
                 Вхід
               </a>
             </div>

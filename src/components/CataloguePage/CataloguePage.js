@@ -33,7 +33,7 @@ const CataloguePage = () => {
       <div className="container-horisontal catalogue-page__section">
         <ul className="container-horisontal breadcrumbs">
           <li>
-            <a href="#" className="body-text breadcrumbs__item" onClick={() => navigate("/home")}>
+            <a className="body-text breadcrumbs__item" onClick={() => navigate("/home")}>
               Головна
             </a>
           </li>
