@@ -31,7 +31,7 @@ const CataloguePage = () => {
       <div className="container-horisontal catalogue-page__section">
         <ul className="container-horisontal breadcrumbs">
           <li>
-            <a href="/home" className="body-text breadcrumbs__item">
+            <a href="/bubu/home" className="body-text breadcrumbs__item">
               Головна
             </a>
           </li>
