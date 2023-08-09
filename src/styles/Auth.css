@@ -19,6 +19,7 @@
 .auth__logo {
     max-width: 11.875rem;
     width: 100%;
+    cursor: pointer;
 }
 
 .auth__form__container {

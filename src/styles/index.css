@@ -52,6 +52,7 @@
     color: #D03664;
     text-transform: capitalize;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .breadcrumbs__item:hover {
