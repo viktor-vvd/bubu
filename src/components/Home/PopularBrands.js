@@ -41,7 +41,7 @@ const PopularBrands = () => {
               }
             },
             {
-              breakpoint: 480,
+              breakpoint: 700,
               settings: {
                 slidesToShow: 3,
               }
