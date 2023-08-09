@@ -51,7 +51,7 @@ const ProductPage = () => {
       <section className="page-container product-page__top-section">
         <ul className="container-horisontal breadcrumbs">
           <li>
-            <a href="/bubu/home" className="body-text breadcrumbs__item">
+            <a href="/home" className="body-text breadcrumbs__item">
               Головна
             </a>
           </li>
@@ -61,7 +61,7 @@ const ProductPage = () => {
             </span>
           </li>
           <li>
-            <a href="/bubu/catalogue" className="body-text breadcrumbs__item">
+            <a href="/catalogue" className="body-text breadcrumbs__item">
               Дитячі коляски
             </a>
           </li>

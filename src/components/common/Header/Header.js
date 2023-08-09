@@ -35,7 +35,7 @@ const Header = () => {
       <div className="container-vertical page-container header">
         <div className="container-horisontal header__section">
           <div className="container-horisontal">
-            <a href="/bubu/home">
+            <a href="/home">
               <img
                 className="header__logo"
                 src={bubuLogoWhite}
@@ -100,7 +100,7 @@ const Header = () => {
                 src={profile}
                 alt="profile"
               />
-              <a className="header__profile__link" href="/bubu/auth">
+              <a className="header__profile__link" href="/auth">
                 Вхід
               </a>
             </div>

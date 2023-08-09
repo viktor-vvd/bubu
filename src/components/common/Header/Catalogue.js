@@ -24,7 +24,7 @@ const Catalogue = () => {
   ]);
 
   useEffect(() => {
-    setisCatalogueExpanded(location.pathname === "/bubu/home");
+    setisCatalogueExpanded(location.pathname === "/home");
 
     const handleWindowResize = () => {
       setWindowSize([window.innerWidth, window.innerHeight]);
@@ -84,7 +84,7 @@ const Catalogue = () => {
                 src={carriage}
                 alt="menu"
               />
-              <a className="catalogue__list__item__text" href="/bubu/catalogue">
+              <a className="catalogue__list__item__text" href="/catalogue">
                 Дитячі коляски
               </a>
             </li>
