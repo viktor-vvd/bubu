@@ -12,6 +12,10 @@
     padding-top: 1.25rem;
 }
 
+.header_mobile {
+    display: none;
+}
+
 .header .container-horisontal {
     gap: 1.88rem;
 }
@@ -50,24 +54,6 @@
     font-size: 1.0625rem;
     font-weight: 500;
     color: #FFF;
-}
-
-@media (max-width: 1300px) and (min-width: 1050px) {
-    .header__socials__pc {
-        display: none;
-    }
-
-    .container-horisontal .header__nav{
-        gap:0.5rem;
-    }
-
-    .container-horisontal .header__container_top_right{
-        gap:0.5rem;
-    }
-
-    .header .container-horisontal {
-        gap: 1rem;
-    }
 }
 
 .header__socials__logo {
@@ -148,4 +134,90 @@
     background: #F99C11;
     padding: 0.2rem 0.5rem 0.06rem;
     border-radius: 50%;
+}
+
+.header__menu-mobile__icon{
+    width: 1.875rem;
+}
+
+@media (max-width: 1300px) and (min-width: 1050px) {
+    .header__socials__pc {
+        display: none;
+    }
+
+    .container-horisontal .header__nav{
+        gap:0.5rem;
+    }
+
+    .container-horisontal .header__container_top_right{
+        gap:0.5rem;
+    }
+
+    .header .container-horisontal {
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 1050px) {
+    .header{
+        display: none;
+    }
+
+    .header_mobile{
+        display: flex;
+        padding: 0.88rem 1.88rem;
+        gap:1.88rem;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .header-mobile__container{
+        gap:1.88rem;
+    }
+
+    .header__logo{
+        width: 8.625rem;
+    }
+
+    .search-bar{
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px){
+    .header{
+        display: none;
+    }
+
+    .header_mobile{
+        display: flex;
+        padding: 1.25rem 1rem ;
+        gap:1.25rem;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .header-mobile__container{
+        gap:1.25rem;
+    }
+
+    .header__logo{
+        width: 5.625rem;
+    }
+
+    .header__list__container{
+        position: relative;
+    }
+
+    .header__list__text{
+        display: none;
+    }
+
+    .header__list__cart__text{
+        display: block;
+        position: absolute;
+        top:-0.6rem;
+        right: -0.9rem;
+        font-size: 0.75rem;
+    }
 }

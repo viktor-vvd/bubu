@@ -65,3 +65,37 @@
 .catalogue__list__item__text:hover {
     text-decoration: underline;
 }
+
+@media (max-width: 1050px){
+    .catalogue {
+        width: 100%;
+        position: relative;
+        flex-shrink: 0;
+        position: inherit;
+    }
+    .catalogue__list {
+        padding: 0;
+        background: none;
+        position: inherit;
+        top:0;
+        left:0;
+    }
+    .catalogue__list__button{
+        border-radius: 1.25rem;
+        background: #FFEAF1;
+        width: 100%;
+        padding: 1.88rem;
+    }
+
+    .catalogue__list_expanded{
+        position: absolute;
+        background: #FFF;
+        padding: 1.88rem 1rem;
+        width: 14.6rem;
+        height: 100vh;
+        border-radius: 0;
+    }
+    .catalogue__list__item__icon_back{
+        width: 0.40625rem;
+    }
+}

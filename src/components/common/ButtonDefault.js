@@ -17,7 +17,7 @@ const ButtonDefault = ({
       onClick={onclick}
     >
       {icon && <img className="button__icon" src={icon} alt="icon" />}
-      <span className="buton__text">{value}</span>
+      <span className="buton__text button-text">{value}</span>
     </button>
   );
 };

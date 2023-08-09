@@ -10,14 +10,18 @@
     background: #D03664;
 }
 
+@media (max-width: 480px) {
+    .button {
+        padding: 1rem 1rem;
+    }
+}
+
 .button__icon {
     height: 1.0625rem;
 }
 
 .buton__text {
     color: #FFF;
-    font-size: 0.9375rem;
-    font-weight: 700;
     white-space: nowrap;
 }
 

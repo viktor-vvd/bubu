@@ -30,11 +30,15 @@
     grid-area: header;
 }
 
+.sort__container{
+    grid-area: sort;
+    position: relative;
+}
+
 .sort {
     gap: 1.25rem;
     list-style-type: none;
     justify-content: flex-end;
-    grid-area: sort;
 }
 
 .sort__item {
@@ -74,4 +78,68 @@
 
 .pagination__button_more{
     width: fit-content;
+}
+
+@media (max-width: 1050px){
+    .catalogue-page__content {
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-between;
+        grid-template-areas:
+            "header sort"
+            "filters filters"
+            "main main"
+    }
+    
+}
+@media (max-width: 800px){
+    .catalogue-page__content {
+        grid-template-columns: 1fr;
+        justify-content: space-between;
+        grid-template-areas:
+            "header" 
+            "sort"
+            "filters"
+            "main"
+    }
+    .sort {
+        justify-content: flex-start;
+    }
+    
+}
+
+@media (max-width: 550px){
+    .sort__container{
+        height: 2.26rem;
+    }
+    .sort{
+        position: absolute;
+        flex-direction: column;
+        align-items: flex-start;
+        background: #fff;
+        padding: 0.6rem 0;
+        z-index: 3;
+    }
+
+    .sort__button{
+        gap:0.62rem;
+    }
+
+    .sort__item{
+        padding: 0 0.6rem ;
+    }
+
+    .sort__item_selected{
+        padding: 0;
+    }
+
+    .sort__fold-icon {
+        width: 0.6875rem;
+        flex-shrink: 0;
+        transition: all 0.1s ease-in-out;
+        rotate: 180deg;
+    }
+    
+    .sort__fold_expanded {
+        rotate: 0deg;
+    }
 }

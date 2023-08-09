@@ -28,6 +28,19 @@
     cursor: pointer;
     border-radius: 100%;
 }
+@media (max-width: 1000px) {
+    .slider__arrow__icon{
+        width: 3rem;
+        height: 3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .slider__arrow__icon{
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+}
 
 .slider__dots__container {
     display: flex;

@@ -149,3 +149,19 @@
         font-weight: 700;
     }
 }
+
+@media (max-width: 1050px) and (min-width: 700px) {
+    .content-container {
+        padding-top: 4.82rem;
+        width: 100%;
+        z-index: 1;
+    }
+}
+
+@media (max-width: 700px) {
+    .content-container {
+        padding-top: 3.9rem;
+        width: 100%;
+        z-index: 1;
+    }
+}

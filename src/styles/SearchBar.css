@@ -1,4 +1,4 @@
-.container-horisontal .search-bar{
+.search-bar{
     width: 100%;
 }
 
@@ -8,7 +8,7 @@
     background-repeat: no-repeat;
     background-size: 0.9375rem;
     text-overflow: ellipsis;
-    padding: 1.25rem;
+    padding: 0.94rem;
     padding-right: 2.3775rem;
     width: 100%;
     color: #FFF;
@@ -23,4 +23,36 @@
 .search-bar__input::placeholder {
     color: #FFF;
     font-size: 0.9375rem;
+}
+
+.search-bar_mobile__icon{
+    display: none;
+    cursor: pointer;
+}
+
+
+@media (max-width: 700px){
+    .search-bar__input{
+        display: none;
+    }
+
+    .search-bar_mobile__icon{
+        display: block;
+        cursor: pointer;
+    }
+
+    .search-bar__input__expanded{
+        display: block;
+        width: 100%;
+    }
+    
+    .search-bar__expanded{
+        position:absolute;
+        top:0;
+        left:0;
+        padding: 0.88rem 1.88rem;
+        background: #D03664;
+        width: 100%;
+        gap:1rem;
+    }
 }

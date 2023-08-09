@@ -37,21 +37,27 @@ const ProductsSlider = ({productsList}) => {
         autoplay={false}
         responsive={[
           {
-            breakpoint: 1050,
+            breakpoint: 1170,
             settings: {
               slidesToShow: 4,
             }
           },
           {
-            breakpoint: 768,
+            breakpoint: 936,
             settings: {
               slidesToShow: 3,
             }
           },
           {
-            breakpoint: 320,
+            breakpoint: 702,
             settings: {
               slidesToShow: 2,
+            }
+          },
+          {
+            breakpoint: 312,
+            settings: {
+              slidesToShow: 1,
             }
           }
         ]}

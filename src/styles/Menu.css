@@ -1,0 +1,61 @@
+.menu__button{
+    cursor: pointer;
+}
+
+.menu__button_expanded{
+    width: 14.6rem;
+}
+
+.header__menu-mobile__icon{
+    height: 1.125rem;
+    flex-shrink: 0;
+}
+
+.menu__container{
+    height: 100vh;   
+    gap:1.25rem;
+    align-items: flex-start;
+    position: absolute;
+    top:0;
+    left:0; 
+}
+.menu{
+    width: 14.6rem;
+    height: 100%;
+    justify-content: flex-start;
+    padding: 1.88rem 1rem;
+    gap:2.5rem;
+    background: #D03664;
+}
+
+.menu__close{
+    padding-top: 1.25rem;
+    cursor: pointer;
+}
+
+.menu__close__icon{
+    width: 1.5625rem;
+}
+
+.menu__block{
+    align-items: flex-start;
+    gap:1.88rem;
+    width: 100%;
+}
+
+.menu__nav__item {
+    color: #FFF;
+    font-size: 0.875rem;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.menu__nav__item:hover {
+    color: #FFEAF1;
+    text-decoration: underline;
+}
+
+.menu__divider{
+    width: 100%;
+    border: 1px solid #FFC5D6;
+}

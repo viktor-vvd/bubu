@@ -11,6 +11,7 @@
 
 .footer__top-section {
     width: 100%;
+    height: 16.25rem;
     align-items: center;
     justify-content: center;
     background-image: url("../assets/images/FooterWaves2.png");
@@ -33,6 +34,7 @@
 
 .footer__promo__header {
     color: #FFF;
+    white-space: nowrap;
     flex-shrink: 0;
 }
 
@@ -54,7 +56,6 @@
     border-radius: 0.625rem;
     border: 1px solid #FFF;
     background-color: rgba(255, 255, 255, 0.15);
-    flex-shrink: 0;
 }
 
 .footer__promo__form__input::placeholder {
@@ -80,6 +81,16 @@
 
 .footer__promo__image {
     width: 21.5625rem;
+}
+
+.footer__middle-section{
+    width: 100%;
+    background: #AA2B51;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    align-items: center;
+    justify-content: center;
+    display: none;
 }
 
 .footer__bottom-section {
@@ -159,13 +170,6 @@
     font-size: 0.9375rem;
     font-weight: 300;
     text-decoration: none;
-
-}
-
-@media (min-width: 360px) {
-    .footer__bottom__info__item {
-        white-space: nowrap;
-    }
 }
 
 .footer__bottom__info__item:hover {
@@ -189,4 +193,47 @@
 
 .footer__bottom__bottom-container__paying__item {
     height: 1.875rem;
+}
+
+@media (min-width: 360px) {
+    .footer__bottom__info__item {
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 1050px) {
+    .footer__bottom__contacts__wrapper{
+        padding: 0;
+        width: 100%;
+        background: none;
+    }
+    .footer__middle-section{
+        display: flex;
+    }
+    .footer__bottom .footer__bottom__contacts__wrapper{
+        display: none;
+    }
+    .footer__promo{
+        flex-direction: column;
+        gap:0.94rem;
+    }
+
+    .footer__promo__wrapper{
+        gap: 1.69rem;
+    }
+}
+
+@media (max-width: 780px){
+    .footer__promo__image {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    
+
+    .footer__top-section {
+        background: #F99C11;
+        height: 11.875rem;
+    }
 }

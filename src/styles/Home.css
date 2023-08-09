@@ -16,12 +16,6 @@
     flex-shrink: 0;
 }
 
-@media (max-width: 1050px) {
-    .catalogue-placeholder {
-        display: none;
-    }
-}
-
 .home__short-info__section {
     align-items: center;
 }
@@ -43,4 +37,18 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 1050px) {
+    .catalogue__placeholder {
+        display: none;
+    }
+}
+@media (max-width: 480px) {
+    .home {
+        padding: 1rem;
+        padding-bottom: 3.75rem;
+        gap: 3.75rem;
+        overflow: hidden;
+    }
 }

@@ -13,10 +13,10 @@ const ProductCard = ({ item }) => {
         <div className="container-vertical product-card__image__container">
           <img className="product-card__image" src={item.product_images[0]} alt="Product" />
           {item.discount > 0 && (
-            <span className="product-card__discount">-{item.discount}%</span>
+            <span className="body-text product-card__discount">-{item.discount}%</span>
           )}
         </div>
-        <span className="product-card__title">{item.name}</span>
+        <span className="body-text product-card__title">{item.name}</span>
         <div className="container-horisontal product-card__price__container">
           <span className={"product-card__price" + (item.discount > 0 ? " product-card__price_old" : "")}>
             {item.price

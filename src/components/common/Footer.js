@@ -26,7 +26,6 @@ const Footer = () => {
                 name="email"
                 type="text"
                 placeholder="Ваш email"
-                /* onkeyup="myFunction()" */
               />
               <button className="footer__promo__form__button" type="submit">
                 <img
@@ -43,11 +42,11 @@ const Footer = () => {
             alt="mother"
           />
         </div>
-      </div>
-      <div className="container-horisontal footer__bottom-section">
-        <div className="container-vertical page-container footer__bottom">
-          <div className="container-horisontal footer__bottom__top-container">
-            <div className="container-vertical footer__bottom__contacts__wrapper">
+      </div> 
+
+      <div className="container-horisontal footer__middle-section">
+        <div className="container-vertical page-container footer__middle">
+          <div className="container-vertical footer__bottom__contacts__wrapper">
               <h3 className="headline footer__bottom__contacts__item">
                 (063) 128-46-09
               </h3>
@@ -55,8 +54,7 @@ const Footer = () => {
                 bubu.shop2018@gmail.com
               </span>
               <span className="footer__bottom__contacts__item footer__bottom__contacts__adress">
-                Одеса, вул. Михайлівська 8<br />
-                (щодня з 10:00 до 20:00)
+                Одеса, вул. Михайлівська 8 (щодня з 10:00 до 20:00)
               </span>
               <div className="footer__bottom__socials">
                 <a href="#">
@@ -82,7 +80,46 @@ const Footer = () => {
                 </a>
               </div>
             </div>
+        </div>
+      </div>
 
+      <div className="container-horisontal footer__bottom-section">
+        <div className="container-vertical page-container footer__bottom">
+          <div className="container-horisontal footer__bottom__top-container">
+          <div className="container-vertical footer__bottom__contacts__wrapper">
+              <h3 className="headline footer__bottom__contacts__item">
+                (063) 128-46-09
+              </h3>
+              <span className="footer__bottom__contacts__item footer__bottom__contacts__email">
+                bubu.shop2018@gmail.com
+              </span>
+              <span className="footer__bottom__contacts__item footer__bottom__contacts__adress">
+                Одеса, вул. Михайлівська 8 (щодня з 10:00 до 20:00)
+              </span>
+              <div className="footer__bottom__socials">
+                <a href="#">
+                  <img
+                    className="footer__bottom__socials__icon"
+                    src={instagram}
+                    alt="instagram"
+                  />
+                </a>
+                <a href="#">
+                  <img
+                    className="footer__bottom__socials__icon"
+                    src={youtube}
+                    alt="youtube"
+                  />
+                </a>
+                <a href="#">
+                  <img
+                    className="footer__bottom__socials__icon"
+                    src={facebookmini}
+                    alt="facebook"
+                  />
+                </a>
+              </div>
+            </div>
             <div className="container-vertical footer__bottom__info__wrapper">
               <h3 className="headline footer__bottom__info__header">
                 Інформація
@@ -177,11 +214,25 @@ const Footer = () => {
             </div>
           </div>
           <div className="container-vertical footer__bottom__bottom-container">
-            <span className="footer__bottom__bottom-container__copyright">© Bubu 2022. Всі права захищені.</span>
+            <span className="footer__bottom__bottom-container__copyright">
+              © Bubu 2022. Всі права захищені.
+            </span>
             <div className="container-horisontal footer__bottom__bottom-container__paying">
-              <img className="footer__bottom__bottom-container__paying__item" src={mastercard} alt="mastercard" />
-              <img className="footer__bottom__bottom-container__paying__item" src={visa} alt="visa" />
-              <img className="footer__bottom__bottom-container__paying__item" src={liqpay} alt="liqpay" />
+              <img
+                className="footer__bottom__bottom-container__paying__item"
+                src={mastercard}
+                alt="mastercard"
+              />
+              <img
+                className="footer__bottom__bottom-container__paying__item"
+                src={visa}
+                alt="visa"
+              />
+              <img
+                className="footer__bottom__bottom-container__paying__item"
+                src={liqpay}
+                alt="liqpay"
+              />
             </div>
           </div>
         </div>

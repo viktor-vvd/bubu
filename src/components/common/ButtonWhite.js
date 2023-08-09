@@ -17,7 +17,7 @@ const ButtonWhite = ({
       onClick={onclick}
     >
       {icon && <img className="button__icon" src={icon} alt="icon" />}
-      <span className="buton__text buton__text_white">{value}</span>
+      <span className="buton__text buton__text_white button-text">{value}</span>
     </button>
   );
 };
