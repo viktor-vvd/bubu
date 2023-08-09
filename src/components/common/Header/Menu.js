@@ -26,7 +26,7 @@ const Menu = () => {
       {isMenuExpanded && (
         <div className="container-horisontal menu__container">
           <div className="container-vertical menu">
-            <Catalogue/>
+            <Catalogue initiallyExpanded={false}/>
             <nav className="container-vertical menu__block">
               <a className="menu__nav__item" href="#">
                 Про нас

@@ -15,7 +15,7 @@ import "../../../styles/Catalogue.css";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 
-const Catalogue = () => {
+const Catalogue = ({initiallyExpanded=true}) => {
   const navigate = useNavigate();
   const location = useLocation();
   const [isCatalogueExpanded, setisCatalogueExpanded] = useState(false);
@@ -25,7 +25,7 @@ const Catalogue = () => {
   ]);
 
   useEffect(() => {
-    setisCatalogueExpanded(location.pathname.includes("home"));
+    setisCatalogueExpanded(location.pathname.includes("home")&&initiallyExpanded);
 
     const handleWindowResize = () => {
       setWindowSize([window.innerWidth, window.innerHeight]);
