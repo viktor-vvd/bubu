@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/bubu/static/css/main.8f966e23.css",
+    "main.css": "/bubu/static/css/main.15c17106.css",
     "main.js": "/bubu/static/js/main.5fc4c53f.js",
     "static/js/787.ef9b9c23.chunk.js": "/bubu/static/js/787.ef9b9c23.chunk.js",
     "static/media/salesSlide.png": "/bubu/static/media/salesSlide.72f2d0cf9c41e54dbdf2.png",
@@ -31,12 +31,12 @@
     "static/media/slick.woff": "/bubu/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/bubu/index.html",
     "static/media/checkboxInner.svg": "/bubu/static/media/checkboxInner.71e6a9b5eb8f8e0cf0aa.svg",
-    "main.8f966e23.css.map": "/bubu/static/css/main.8f966e23.css.map",
+    "main.15c17106.css.map": "/bubu/static/css/main.15c17106.css.map",
     "main.5fc4c53f.js.map": "/bubu/static/js/main.5fc4c53f.js.map",
     "787.ef9b9c23.chunk.js.map": "/bubu/static/js/787.ef9b9c23.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8f966e23.css",
+    "static/css/main.15c17106.css",
     "static/js/main.5fc4c53f.js"
   ]
 }
