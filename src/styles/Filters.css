@@ -141,10 +141,11 @@
 @media (max-width: 1050px) {
 
     .filters__absolute__container {
-        height: 92vh;
+        height: 100vh;
         position: fixed;
         align-items: flex-start;
-        top: 4.82rem;
+        top:0;
+        padding-top: 4.82rem;
         left: 0;
         z-index: 3;
         gap: 1.25rem;
@@ -194,7 +195,9 @@
 
 @media (max-width: 700px) {
     .filters__absolute__container {
-        top: 3.9rem;
+        height: 100vh;
+        top:0;
+        padding-top: 3.9rem;
     }
     .filters__mobile-buttons {
         width: 85vw;

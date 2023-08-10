@@ -3,7 +3,7 @@
 }
 
 .menu__button_expanded{
-    width: 14.6rem;
+    width: 18.41rem;
 }
 
 .header__menu-mobile__icon{
@@ -29,12 +29,16 @@
 }
 
 .menu__close{
-    padding-top: 1.25rem;
-    cursor: pointer;
+    margin-top: 1.25rem;
+    padding: 0.5rem;
+        cursor: pointer;
+        background: #D03664;
+        border-radius: 50%;
+        z-index: 12;
 }
 
 .menu__close__icon{
-    width: 1.5625rem;
+    width: 1.56rem;
 }
 
 .menu__block{
