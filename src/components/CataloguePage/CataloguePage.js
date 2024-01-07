@@ -30,8 +30,8 @@ const CataloguePage = () => {
   }, []);
   return (
     <div className="container-vertical page-container catalogue-page">
-      <div className="container-horisontal catalogue-page__section">
-        <ul className="container-horisontal breadcrumbs">
+      <div className="container-horizontal catalogue-page__section">
+        <ul className="container-horizontal breadcrumbs">
           <li>
             <a className="body-text breadcrumbs__item" onClick={() => navigate("/home")}>
               Головна
@@ -45,9 +45,9 @@ const CataloguePage = () => {
       <div className="catalogue-page__content">
         <h1 className="catalogue-page__content__header">Дитячі коляски</h1>
         <div className="sort__container">
-          <ul className="container-horisontal sort">
+          <ul className="container-horizontal sort">
             <li
-              className="container-horisontal sort__button"
+              className="container-horizontal sort__button"
               onClick={() => {
                 windowSize[0] < 550 && setisSortExpanded(!isSortExpanded);
               }}
@@ -92,7 +92,7 @@ const CataloguePage = () => {
                 <ProductCard item={item} key={index} />
               ))}
           </div>
-          <div className="container-horisontal pagination__wrapper">
+          <div className="container-horizontal pagination__wrapper">
             <ButtonWhite
               value="Показати ще"
               btntitle="Показати ще"

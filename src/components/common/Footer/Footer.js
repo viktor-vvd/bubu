@@ -12,15 +12,15 @@ import liqpay from "../../../assets/images/liqpay.png";
 const Footer = () => {
   return (
     <footer className="footer">
-      <div className="container-horisontal footer__top-section">
-        <div className="container-horisontal page-container footer__promo__wrapper">
-          <div className="container-horisontal footer__promo">
+      <div className="container-horizontal footer__top-section">
+        <div className="container-horizontal page-container footer__promo__wrapper">
+          <div className="container-horizontal footer__promo">
             <h2 className="headline footer__promo__header">
               Отримуйте ПРОМОКОДИ ТА
               <br />
               ЕКСКЛЮЗИВНІ ПРОПОЗИЦІЇ
             </h2>
-            <form className="container-horisontal footer__promo__form">
+            <form className="container-horizontal footer__promo__form">
               <input
                 className="body-text footer__promo__form__input"
                 name="email"
@@ -44,7 +44,7 @@ const Footer = () => {
         </div>
       </div> 
 
-      <div className="container-horisontal footer__middle-section">
+      <div className="container-horizontal footer__middle-section">
         <div className="container-vertical page-container footer__middle">
           <div className="container-vertical footer__bottom__contacts__wrapper">
               <h3 className="headline footer__bottom__contacts__item">
@@ -83,9 +83,9 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="container-horisontal footer__bottom-section">
+      <div className="container-horizontal footer__bottom-section">
         <div className="container-vertical page-container footer__bottom">
-          <div className="container-horisontal footer__bottom__top-container">
+          <div className="container-horizontal footer__bottom__top-container">
           <div className="container-vertical footer__bottom__contacts__wrapper">
               <h3 className="headline footer__bottom__contacts__item">
                 (063) 128-46-09
@@ -217,7 +217,7 @@ const Footer = () => {
             <span className="footer__bottom__bottom-container__copyright">
               © Bubu 2022. Всі права захищені.
             </span>
-            <div className="container-horisontal footer__bottom__bottom-container__paying">
+            <div className="container-horizontal footer__bottom__bottom-container__paying">
               <img
                 className="footer__bottom__bottom-container__paying__item"
                 src={mastercard}

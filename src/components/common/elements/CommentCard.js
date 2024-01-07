@@ -8,9 +8,9 @@ const CommentCard = ({ commentItem }) => {
   return (
     <div className="container-vertical comment">
       <span className="comment__date">{commentItem.date}</span>
-      <div className="container-horisontal comment__header">
+      <div className="container-horizontal comment__header">
         <h3 className="comment__user-name">{commentItem.user_name}</h3>
-        <div className="container-horisontal comment__rate">
+        <div className="container-horizontal comment__rate">
           {commentItem.rate &&
             [...Array(commentItem.rate)].map((e, i) => (
               <img
@@ -26,7 +26,7 @@ const CommentCard = ({ commentItem }) => {
         <span className="comment__content">{commentItem.content}</span>
       )}
       {commentItem.comment_images && (
-        <div className="container-horisontal comment__images">
+        <div className="container-horizontal comment__images">
           {commentItem.comment_images.map((commentImageItem, index) =>
             commentItem.comment_images.length > 4 ? (
               index < 3 ? (
@@ -50,7 +50,7 @@ const CommentCard = ({ commentItem }) => {
                       alt="comment img"
                       key={"comment_image" + index}                      
                     />
-                    <span className="body-text container-horisontal comment__images__more__text">
+                    <span className="body-text container-horizontal comment__images__more__text">
                       +{commentItem.comment_images.length - 4}
                     </span>
                   </div>

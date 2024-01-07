@@ -25,7 +25,7 @@ const Auth = () => {
           ) : (
             <Register setisRegistered={setisRegistered} />
           )}
-          <div className="container-horisontal auth__divider">
+          <div className="container-horizontal auth__divider">
             <hr className="auth__divider__line" />
             <span className="auth__divider__text">Або</span>
             <hr className="auth__divider__line" />

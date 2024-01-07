@@ -26,7 +26,7 @@ const Menu = () => {
         />
       </div>
       {isMenuExpanded && (
-        <div className="container-horisontal menu__container">
+        <div className="container-horizontal menu__container">
           <div className="container-vertical menu">
             <Catalogue initiallyExpanded={false}/>
             <nav className="container-vertical menu__block">
@@ -46,7 +46,7 @@ const Menu = () => {
             <hr className="menu__divider"/>
             <div className="container-vertical menu__block">
             <span className="header__phone">(063) 128-46-09</span>
-            <div className="container-horisontal header__inner__container header__socials__pc">
+            <div className="container-horizontal header__inner__container header__socials__pc">
               <a href="#">
                 <img
                   className="header__socials__logo"
@@ -69,7 +69,7 @@ const Menu = () => {
                 />
               </a>
             </div>
-            <div className="container-horisontal header__language">
+            <div className="container-horizontal header__language">
               <a className="header__language__item" href="#">
                 Укр
               </a>
@@ -81,7 +81,7 @@ const Menu = () => {
                 Рус
               </a>
             </div>
-            <div className="container-horisontal header__profile">
+            <div className="container-horizontal header__profile">
               <img
                 className="header__profile__icon"
                 src={profile}

@@ -23,7 +23,7 @@ const SearchBar = () => {
   }, []);
  
   return (
-    <div className={isSearchExpanded?("container-horisontal search-bar search-bar__expanded"):("container-horisontal search-bar")}>
+    <div className={isSearchExpanded?("container-horizontal search-bar search-bar__expanded"):("container-horizontal search-bar")}>
       <input
       className={isSearchExpanded?("search-bar__input search-bar__input__expanded"):("search-bar__input")}
         name="phone"

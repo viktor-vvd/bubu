@@ -37,7 +37,7 @@ const Filters = ({ brandsList }) => {
   return (
     <div className="container-vertical filters__container">
       {windowSize[0] < 1050 && (
-        <div className="container-horisontal filters__mobile-buttons">
+        <div className="container-horizontal filters__mobile-buttons">
           <ButtonDefault
           className="filter__mobile__button"
             icon={filter}
@@ -51,12 +51,12 @@ const Filters = ({ brandsList }) => {
       )}
 
       {(windowSize[0] > 1050 || isfiltersExpanded) ? (
-        <div className="container-horisontal filters__absolute__container">
+        <div className="container-horizontal filters__absolute__container">
           <div className="container-vertical filters__absolute__wrapper">
             <aside className="container-vertical filters">
               <div className="container-vertical filter-group">
                 <div
-                  className="container-horisontal filter-group__header"
+                  className="container-horizontal filter-group__header"
                   onClick={() => setCategoryExpanded(!categoryExpanded)}
                 >
                   <h2 className="subtitle">Категорія</h2>
@@ -133,7 +133,7 @@ const Filters = ({ brandsList }) => {
               </div>
               <div className="container-vertical filter-group">
                 <div
-                  className="container-horisontal filter-group__header"
+                  className="container-horizontal filter-group__header"
                   onClick={() => setPriceExpanded(!priceExpanded)}
                 >
                   <h2 className="subtitle">Ціна</h2>
@@ -161,7 +161,7 @@ const Filters = ({ brandsList }) => {
                         pearling={true}
                       />
                     </div>
-                    <div className="container-horisontal price-range__form">
+                    <div className="container-horizontal price-range__form">
                       <input
                         className="price-range__form__input"
                         name="min"
@@ -211,7 +211,7 @@ const Filters = ({ brandsList }) => {
               </div>
               <div className="container-vertical filter-group">
                 <div
-                  className="container-horisontal filter-group__header"
+                  className="container-horizontal filter-group__header"
                   onClick={() => setBrandExpanded(!brandExpanded)}
                 >
                   <h2 className="subtitle">Категорія</h2>

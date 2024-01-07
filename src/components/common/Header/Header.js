@@ -35,8 +35,8 @@ const Header = () => {
   return (
     <header className="container-vertical header__background">
       <div className="container-vertical page-container header">
-        <div className="container-horisontal header__section">
-          <div className="container-horisontal">
+        <div className="container-horizontal header__section">
+          <div className="container-horizontal">
             <a onClick={() => navigate("/home")}>
               <img
                 className="header__logo"
@@ -44,7 +44,7 @@ const Header = () => {
                 alt="bubu Logo"
               />
             </a>
-            <nav className="container-horisontal header__inner__container header__nav">
+            <nav className="container-horizontal header__inner__container header__nav">
               <a className="header__nav__item" href="#">
                 Про нас
               </a>
@@ -59,9 +59,9 @@ const Header = () => {
               </a>
             </nav>
           </div>
-          <div className="container-horisontal header__container_top_right">
+          <div className="container-horizontal header__container_top_right">
             <span className="header__phone">(063) 128-46-09</span>
-            <div className="container-horisontal header__inner__container header__socials__pc">
+            <div className="container-horizontal header__inner__container header__socials__pc">
               <a href="#">
                 <img
                   className="header__socials__logo"
@@ -84,7 +84,7 @@ const Header = () => {
                 />
               </a>
             </div>
-            <div className="container-horisontal header__language">
+            <div className="container-horizontal header__language">
               <a className="header__language__item" href="#">
                 Укр
               </a>
@@ -96,7 +96,7 @@ const Header = () => {
                 Рус
               </a>
             </div>
-            <div className="container-horisontal header__profile">
+            <div className="container-horizontal header__profile">
               <img
                 className="header__profile__icon"
                 src={profile}
@@ -108,10 +108,10 @@ const Header = () => {
             </div>
           </div>
         </div>
-        <div className="container-horisontal header__section">
+        <div className="container-horizontal header__section">
           <Catalogue />
           <SearchBar />
-          <a href="#" className="container-horisontal header__list__container">
+          <a href="#" className="container-horizontal header__list__container">
             <img
               className="header__list__icon"
               src={сomparison}
@@ -119,11 +119,11 @@ const Header = () => {
             />
             <span className="header__list__text">0</span>
           </a>
-          <a href="#" className="container-horisontal header__list__container">
+          <a href="#" className="container-horizontal header__list__container">
             <img src={favorite} alt="favorite" />
             <span className="header__list__text">0</span>
           </a>
-          <a href="#" className="container-horisontal header__list__container">
+          <a href="#" className="container-horizontal header__list__container">
             <img src={cart} alt="cart" />
             <span className="header__list__text header__list__cart__text">
               1
@@ -133,16 +133,16 @@ const Header = () => {
       </div>
 
       <div className="container-horicontal page-container header_mobile">
-        <div className="container-horisontal header-mobile__container">
+        <div className="container-horizontal header-mobile__container">
           <Menu/>
           <a onClick={() => navigate("/home")}>
             <img className="header__logo" src={bubuLogoWhite} alt="bubu Logo" />
           </a>
         </div>
         {windowSize[0] > 700 && <SearchBar />}
-        <div className="container-horisontal header-mobile__container">
+        <div className="container-horizontal header-mobile__container">
         {windowSize[0] < 700 && <SearchBar />}
-          <a href="#" className="container-horisontal header__list__container">
+          <a href="#" className="container-horizontal header__list__container">
             <img
               className="header__list__icon"
               src={сomparison}
@@ -150,11 +150,11 @@ const Header = () => {
             />
             <span className="header__list__text">0</span>
           </a>
-          <a href="#" className="container-horisontal header__list__container">
+          <a href="#" className="container-horizontal header__list__container">
             <img src={favorite} alt="favorite" />
             <span className="header__list__text">0</span>
           </a>
-          <a href="#" className="container-horisontal header__list__container">
+          <a href="#" className="container-horizontal header__list__container">
             <img src={cart} alt="cart" />
             <span className="header__list__text header__list__cart__text">
               1

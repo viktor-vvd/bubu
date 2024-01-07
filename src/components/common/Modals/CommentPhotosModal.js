@@ -6,7 +6,7 @@ import ProductPhotos from "../../ProductPage/ProductPhotos";
 const CommentPhotosModal = ({ images, onClick }) => {
   return (
     <div className="container-vertical photo-modal__container">
-      <div className="container-horisontal photo-modal__header">
+      <div className="container-horizontal photo-modal__header">
         <h2 className="headline">Фото</h2>
         <img
           className="photo-modal__close-icon"

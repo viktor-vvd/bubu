@@ -13,8 +13,8 @@ const FilterBadge = ({
     <div
       className={
         className
-          ? "container-horisontal filter-badge " + className
-          : "container-horisontal filter-badge"
+          ? "container-horizontal filter-badge " + className
+          : "container-horizontal filter-badge"
       }
       title={title}
     >

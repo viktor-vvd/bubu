@@ -11,13 +11,13 @@ const Home = () => {
   const [isInfoFolded, setisInfoFolded] = useState(true);
   return (
     <main className="container-vertical page-container home">
-      <section className="container-horisontal home__section">
+      <section className="container-horizontal home__section">
         <aside className="catalogue__placeholder"></aside>
         <SaleSlider />
       </section>
       <section className="container-vertical home__section products-section__container">
-        <div className="container-horisontal products-section__title__container">
-          <div className="container-horisontal products-section__title">
+        <div className="container-horizontal products-section__title__container">
+          <div className="container-horizontal products-section__title">
             <h2 className="headline">Акція!</h2>
             <span className="products-section__sale-badge">SALE</span>
           </div>
@@ -32,16 +32,16 @@ const Home = () => {
         <ProductsSlider productsList={productsList} />
       </section>
       <section className="container-vertical home__section products-section__container">
-        <div className="container-horisontal products-section__title__container">
-          <div className="container-horisontal products-section__title">
+        <div className="container-horizontal products-section__title__container">
+          <div className="container-horizontal products-section__title">
             <h2 className="headline">Популярні Категорії</h2>
           </div>
         </div>
         <PopularCategories />
       </section>
       <section className="container-vertical home-section-container products-section__container">
-        <div className="container-horisontal products-section__title__container">
-          <div className="container-horisontal products-section__title">
+        <div className="container-horizontal products-section__title__container">
+          <div className="container-horizontal products-section__title">
             <h2 className="headline">Популярні Бренди</h2>
           </div>
           <a href="#">
@@ -85,8 +85,8 @@ const Home = () => {
         </div>
       </section>
       <section className="container-vertical home__section products-section__container">
-        <div className="container-horisontal products-section__title__container">
-          <div className="container-horisontal products-section__title">
+        <div className="container-horizontal products-section__title__container">
+          <div className="container-horizontal products-section__title">
             <h2 className="headline">Ви переглядали</h2>
           </div>
         </div>

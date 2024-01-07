@@ -16,7 +16,7 @@ const ProductPhotos = ({ items }) => {
     setCurrentSlide(newIndex);
   };
   return (
-    <div className="container-horisontal product-photos">
+    <div className="container-horizontal product-photos">
       <div className="container-vertical product-photos__list">
         {items &&
           items.map((item, index) => (
@@ -29,7 +29,7 @@ const ProductPhotos = ({ items }) => {
             />
           ))}
       </div>
-      <div className="container-horisontal slider__container product-photos__slider__container">
+      <div className="container-horizontal slider__container product-photos__slider__container">
       <div className="slider__arrows">
         <div
           className="slider__arrow__button"

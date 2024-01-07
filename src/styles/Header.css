@@ -16,7 +16,7 @@
     display: none;
 }
 
-.header .container-horisontal {
+.header .container-horizontal {
     gap: 1.88rem;
 }
 
@@ -61,7 +61,7 @@
     height: 1.25rem;
 }
 
-.container-horisontal .header__language {
+.container-horizontal .header__language {
     gap: 0.56rem;
 }
 
@@ -89,7 +89,7 @@
     text-decoration: underline;
 }
 
-.container-horisontal .header__profile {
+.container-horizontal .header__profile {
     gap: 0.62rem;
 }
 
@@ -109,7 +109,7 @@
     color: #FFEAF1;
 }
 
-.container-horisontal .header__list__container {
+.container-horizontal .header__list__container {
     gap: 0.44rem;
     cursor: pointer;
 }
@@ -147,15 +147,15 @@
         display: none;
     }
 
-    .container-horisontal .header__nav{
+    .container-horizontal .header__nav{
         gap:0.5rem;
     }
 
-    .container-horisontal .header__container_top_right{
+    .container-horizontal .header__container_top_right{
         gap:0.5rem;
     }
 
-    .header .container-horisontal {
+    .header .container-horizontal {
         gap: 1rem;
     }
 }

@@ -50,7 +50,7 @@ const ProductPage = () => {
   return (
     <main className="container-vertical product-page">
       <section className="page-container product-page__top-section">
-        <ul className="container-horisontal breadcrumbs">
+        <ul className="container-horizontal breadcrumbs">
           <li>
             <a className="body-text breadcrumbs__item" onClick={() => navigate("/home")}>
               Головна
@@ -73,8 +73,8 @@ const ProductPage = () => {
           </li>
         </ul>
         <h1 className="top-section__header">{item.name}</h1>
-        <ul className="container-horisontal top-section__lists">
-          <li className="container-horisontal top-section__lists__item">
+        <ul className="container-horizontal top-section__lists">
+          <li className="container-horizontal top-section__lists__item">
             <img
               className="top-section__lists__item__icon"
               src={favoriteDefault}
@@ -84,7 +84,7 @@ const ProductPage = () => {
               У вибране
             </span>
           </li>
-          <li className="container-horisontal top-section__lists__item">
+          <li className="container-horizontal top-section__lists__item">
             <img
               className="top-section__lists__item__icon"
               src={comparisonGrey}
@@ -93,7 +93,7 @@ const ProductPage = () => {
             <span className="top-section__lists__item__text">Порівняти</span>
           </li>
         </ul>
-        <div className="container-horisontal top-section__short-info">
+        <div className="container-horizontal top-section__short-info">
           <span
             className={
               item && item.is_avaliable
@@ -106,8 +106,8 @@ const ProductPage = () => {
           <span className="body-text top-section__short-info__code">
             Код: {item.code}
           </span>
-          <div className="container-horisontal top-section__short-info__statistics">
-            <div className="container-horisontal">
+          <div className="container-horizontal top-section__short-info__statistics">
+            <div className="container-horizontal">
               <span className="headline top-section__short-info__rate">
                 {item.rate}{" "}
               </span>
@@ -131,7 +131,7 @@ const ProductPage = () => {
         <form className="container-vertical top-section__buying">
           <div className="container-vertical buying__options">
             <span className="body-text  buying__options__title">Колір:</span>
-            <fieldset className="container-horisontal buying__options__container">
+            <fieldset className="container-horizontal buying__options__container">
               <input
                 type="radio"
                 name="color"
@@ -158,7 +158,7 @@ const ProductPage = () => {
           </div>
           <div className="container-vertical buying__options">
             <span className="body-text buying__options__title">Стать:</span>
-            <fieldset className="container-horisontal buying__options__container">
+            <fieldset className="container-horizontal buying__options__container">
               {item &&
                 item.gender.map((gender, index) => (
                   <label
@@ -181,7 +181,7 @@ const ProductPage = () => {
                 ))}
             </fieldset>
           </div>
-          <div className="container-horisontal buying__price__container">
+          <div className="container-horizontal buying__price__container">
             <span
               className={
                 "buying__price" +
@@ -207,14 +207,14 @@ const ProductPage = () => {
               </>
             )}
           </div>
-          <div className="container-horisontal buying__buttons__container">
+          <div className="container-horizontal buying__buttons__container">
             <ButtonDefault icon={cart} value="КУПИТИ" btntitle="КУПИТИ" onclick={()=>setisCartSuccessModalOpen(true)} btntype="button" />
             <ButtonWhite value="Купити в 1 клік" btntitle="Купити в 1 клік" />
             {isCartSuccessModalOpen&&<CartSuccessModal onClick={()=>setisCartSuccessModalOpen(false)}/>}
           </div>
           <div className="container-vertical buying__location__container">
             <h2 className="subtitle">Ви з Одеси? Заберіть товар у магазині</h2>
-            <div className="container-horisontal location__adress__container">
+            <div className="container-horizontal location__adress__container">
               <img
                 className="location__adress__icon"
                 src={location}
@@ -228,7 +228,7 @@ const ProductPage = () => {
               Забрати сьогодні
             </a>
           </div>
-          <nav className="container-horisontal buying__nav">
+          <nav className="container-horizontal buying__nav">
             <a className="body-text buying__nav__item" href="#">
               Доставка і оплата
             </a>
@@ -243,8 +243,8 @@ const ProductPage = () => {
       </section>
       <div className="container-vertical product-page__middle__container">
         <section className="container-vertical page-container products-section__container product-page__products">
-          <div className="container-horisontal products-section__title__container">
-            <div className="container-horisontal products-section__title">
+          <div className="container-horizontal products-section__title__container">
+            <div className="container-horizontal products-section__title">
               <h2 className="headline">Акція!</h2>
               <span className="products-section__sale-badge">SALE</span>
             </div>
@@ -260,10 +260,10 @@ const ProductPage = () => {
         </section>
 
         <section className="container-vertical product-page__middle__section__container">
-          <div className="container-horisontal page-container product-page__section product-page__middle__section">
+          <div className="container-horizontal page-container product-page__section product-page__middle__section">
             <div className="container-vertical middle__section__content-block__container middle__section__description">
               <div
-                className="container-horisontal middle__section__block__header"
+                className="container-horizontal middle__section__block__header"
                 onClick={() => setDescriptionExpanded(!isDescriptionExpanded)}
               >
                 <h2 className="headline">Опис</h2>
@@ -322,7 +322,7 @@ const ProductPage = () => {
             </div>
             <div className="container-vertical middle__section__content-block__container middle__section__characteristics">
               <div
-                className="container-horisontal middle__section__block__header"
+                className="container-horizontal middle__section__block__header"
                 onClick={() =>
                   setCharacteristicsExpanded(!isCharacteristicsExpanded)
                 }
@@ -340,7 +340,7 @@ const ProductPage = () => {
               </div>
               {isCharacteristicsExpanded && (
                 <ul className="container-vertical middle__section__content-block">
-                  <li className="container-horisontal content-block__characteristic">
+                  <li className="container-horizontal content-block__characteristic">
                     <span className="body-text characteristic characteristic_name">
                       Виробник
                     </span>
@@ -349,7 +349,7 @@ const ProductPage = () => {
                       {brandsList[item.brand_id].name}
                     </span>
                   </li>
-                  <li className="container-horisontal content-block__characteristic">
+                  <li className="container-horizontal content-block__characteristic">
                     <span className="body-text characteristic characteristic_name">
                       Країна
                     </span>
@@ -358,7 +358,7 @@ const ProductPage = () => {
                       {item.country}
                     </span>
                   </li>
-                  <li className="container-horisontal content-block__characteristic">
+                  <li className="container-horizontal content-block__characteristic">
                     <span className="body-text characteristic characteristic_name">
                       Колір
                     </span>
@@ -367,7 +367,7 @@ const ProductPage = () => {
                       {item.color}
                     </span>
                   </li>
-                  <li className="container-horisontal content-block__characteristic">
+                  <li className="container-horizontal content-block__characteristic">
                     <span className="body-text characteristic characteristic_name">
                       Стать
                     </span>
@@ -379,7 +379,7 @@ const ProductPage = () => {
                         )}
                     </span>
                   </li>
-                  <li className="container-horisontal content-block__characteristic">
+                  <li className="container-horizontal content-block__characteristic">
                     <span className="body-text characteristic characteristic_name">
                       Вага
                     </span>
@@ -388,7 +388,7 @@ const ProductPage = () => {
                       {item.weight}
                     </span>
                   </li>
-                  <li className="container-horisontal content-block__characteristic">
+                  <li className="container-horizontal content-block__characteristic">
                     <span className="body-text characteristic characteristic_name">
                       Розмір (ДхШхВ)
                     </span>
@@ -402,11 +402,11 @@ const ProductPage = () => {
             </div>
           </div>
           <div className="container-vertical page-container product-page__section product-page__comments__section">
-            <div className="container-horisontal product-page__comments__section__header">
+            <div className="container-horizontal product-page__comments__section__header">
               <h2 className="headline">Відгуки (9)</h2>
-              <div className="container-horisontal product-page__comments__section__header__rating">
+              <div className="container-horizontal product-page__comments__section__header__rating">
                 <h3 className="subtitle">Рейтинг:</h3>
-                <div className="container-horisontal">
+                <div className="container-horizontal">
                   <span className="top-section__short-info__rate">
                     {item.rate}{" "}
                   </span>
@@ -450,8 +450,8 @@ const ProductPage = () => {
       </div>
 
       <section className="container-vertical page-container products-section__container product-page__products">
-        <div className="container-horisontal products-section__title__container">
-          <div className="container-horisontal products-section__title">
+        <div className="container-horizontal products-section__title__container">
+          <div className="container-horizontal products-section__title">
             <h2 className="headline">Ви переглядали</h2>
           </div>
         </div>

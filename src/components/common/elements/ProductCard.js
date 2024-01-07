@@ -17,7 +17,7 @@ const ProductCard = ({ item }) => {
           )}
         </div>
         <span className="body-text product-card__title">{item.name}</span>
-        <div className="container-horisontal product-card__price__container">
+        <div className="container-horizontal product-card__price__container">
           <span className={"product-card__price" + (item.discount > 0 ? " product-card__price_old" : "")}>
             {item.price
               .toString()
@@ -33,7 +33,7 @@ const ProductCard = ({ item }) => {
             </span>
           )}
         </div>
-        <div className="container-horisontal product-card__buttons__container">
+        <div className="container-horizontal product-card__buttons__container">
           {item.is_avaliable ? (
             <>
               <ButtonDefault value="КУПИТИ" btntitle="КУПИТИ" />

@@ -7,7 +7,7 @@ import ButtonDefault from "../elements/ButtonDefault";
 const NewCommentModal = ({ onClick }) => {
   return (
     <div className="container-vertical new-comment-modal__container">
-      <div className="container-horisontal new-comment-modal__header">
+      <div className="container-horizontal new-comment-modal__header">
         <h2 className="headline">Ваш відгук</h2>
         <img
           className="new-comment-modal__close-icon"
@@ -18,9 +18,9 @@ const NewCommentModal = ({ onClick }) => {
       </div>
       <form className="container-vertical new-comment-modal__form">
         <div className="container-vertical new-comment-modal__form__inputs__container">
-          <div className="container-horisontal new-comment-modal__form__rate">
+          <div className="container-horizontal new-comment-modal__form__rate">
             <h3 className="subtitle">Оцінка:</h3>
-            <div className="container-horisontal">
+            <div className="container-horizontal">
               <input
                 className="checkbox__star"
                 type="checkbox"
@@ -75,7 +75,7 @@ const NewCommentModal = ({ onClick }) => {
             placeholder="Ваш коментар"
           />
         </div>
-        <div className="container-horisontal new-comment-modal__form__add-image">
+        <div className="container-horizontal new-comment-modal__form__add-image">
           <img
             className="new-comment-modal__form__add-image__icon"
             src={gallery}
